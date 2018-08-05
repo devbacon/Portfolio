@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral');
+
+:root {
+  --letter-white: #FFFFFF;
+  --line-main: #FFFFFF;
+  --line-shadow: #555555;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Spectral', serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
