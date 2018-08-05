@@ -1,0 +1,29 @@
+.Landing {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.Name {
+  color: var(--letter-white);
+  font-size: 40px;
+  padding-top: 50vh;
+  padding-left: 25vw;
+}
+
+.Line {
+  border-bottom: 1px solid var(--line-main);
+  box-shadow: 0 10px 0 .1px var(--line-shadow);
+  height: .5px;
+  position: absolute;
+  width: 300vw;
+}
+
+.Upper {
+  top: 0;
+}
+
+.Lower {
+  bottom: 0;
+}
