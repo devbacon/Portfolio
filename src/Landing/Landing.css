@@ -6,113 +6,83 @@
 }
 
 .Header {
-  align-items: center;
   display: flex;
   flex-flow: column;
   height: 100vh;
   justify-content: center;
-  padding-left: 50px;
-  width: 50vw;
-  line-height: 50px;
+  padding-top: 21px;
+  padding-left: 9vw;
 }
 
 .Name {
-  font-size: 50px;
-  letter-spacing: 7px;
+  font-size: 5vw;
+  letter-spacing: 2px;
+  line-height: 5vw;
 }
 
 .SubText {
-  font-size: 20px;
-  letter-spacing: 2.5px;
-  line-height: 20px;
+  font-size: 2vw;
+  letter-spacing: .5px;
+  line-height: 2vw;
+  padding-left: 2vw;
 }
 
 .Line {
   border-bottom: 1px solid var(--line-main);
-  box-shadow: 0 10px 0 .1px var(--line-shadow);
-  height: .5px;
+  box-shadow: 0 8px 0 .1px var(--line-shadow);
   position: absolute;
   width: 500vw;
 }
 
-.Upper {
+.One {
   top: 0;
 }
 
-.Lower {
+.Two {
   bottom: 0;
 }
 
-@media only screen and (max-width: 950px) {
-  .Name {
-    font-size: 45px;
-    letter-spacing: 5px;
-  }
-
-  .SubText {
-    font-size: 18px;
-    letter-spacing: 2px;
+@media only screen and (max-width: 700px) {
+  .Line {
+    box-shadow: 0 6px 0 .1px var(--line-shadow);
   }
 }
 
 @media only screen and (max-width: 850px) {
   .Header {
-    width: 60vw;
-    padding-left: 10px;
+    padding-top: 0;
+    padding-left: 7vw;
   }
 
   .Name {
-    font-size: 40px;
-    letter-spacing: 4px;
+    font-size: 7vw;
+    letter-spacing: 1px;
+    line-height: 7vw;
   }
-
+  
   .SubText {
-    font-size: 15px;
-    letter-spacing: 1.5px;
-  }
-}
-
-@media only screen and (max-width: 678px) {
-  .Name {
-    font-size: 35px;
-    line-height: 35px;
-  }
-
-  .SubText {
-    font-size: 14px;
-    line-height: 15px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .Header {
-    padding-left: 20px;
-  }
-
-  .Name {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  .SubText {
-    font-size: 12.5px;
+    font-size: 2.8vw;
+    letter-spacing: 1px;
+    line-height: 2vw;
+    padding-left: 2vw;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .Header {
-    padding-left: 50px;
-    width: 50vw;
+    padding-left: 20vw;
+    width: 150px;
   }
 
   .Name {
+    font-size: 30px;
     line-height: 30px;
+    padding-bottom: 3px;
   }
 
   .SubText {
-    align-self: start;
-    line-height: 17px;
-    padding-left: 5px;
-    width: 150px;
+    font-size: 15px;
+    line-height: 18px;
+    padding-left: 3px;
   }
 }

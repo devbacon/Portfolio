@@ -6,8 +6,10 @@ class Landing extends Component {
     super(props);
 
     // Establish refs to edit elements
-    this.lineUpper = React.createRef();
-    this.lineLower = React.createRef();
+    this.lineOne = React.createRef();
+    this.lineTwo = React.createRef();
+    this.lineThree = React.createRef();
+    this.lineFour = React.createRef();
   }
 
   componentDidMount() {
@@ -24,17 +26,17 @@ class Landing extends Component {
     // Grab view dimensions and line refs
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const lineUpperStyle = this.lineUpper.current.style;
-    const lineLowerStyle = this.lineLower.current.style;
+    const lineOneStyle = this.lineOne.current.style;
+    const lineTwoStyle = this.lineTwo.current.style;
 
     // Calculate angel of lines
-    const lineUpperAngle = Math.atan2(height / 2 - 0, width - 0) * 180 / Math.PI;
-    const lineLowerAngle = Math.atan2(0 - height, width - width / 2) * 180 / Math.PI;
+    const lineOneAngle = Math.atan2(height / 2 - 0, width - 0) * 180 / Math.PI;
+    const lineTwoAngle = Math.atan2(height - 0, width /2 - width) * 180 / Math.PI;
 
     // Alter angle and offset
-    lineUpperStyle.transform = `translate(-50%) rotate(${lineUpperAngle}deg)`;
-    lineLowerStyle.left = `${width / 2}px`;
-    lineLowerStyle.transform = `translate(-50%) rotate(${lineLowerAngle}deg)`;
+    lineOneStyle.transform = `translate(-50%) rotate(${lineOneAngle}deg)`;
+    lineTwoStyle.left = `${width / 2}px`;
+    lineTwoStyle.transform = `translate(-50%) rotate(${lineTwoAngle}deg)`;
   }
 
   render() {
@@ -44,8 +46,8 @@ class Landing extends Component {
           <div className="Name">DEVON BACON</div>
           <div className="SubText">Web Developer / Software Engineer</div>
         </div>
-        <div className="Line Upper" ref={this.lineUpper}></div>
-        <div className="Line Lower" ref={this.lineLower}></div>
+        <div className="Line One" ref={this.lineOne}></div>
+        <div className="Line Two" ref={this.lineTwo}></div>
       </div>
     );
   }
