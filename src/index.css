@@ -7,7 +7,9 @@
 }
 
 body {
+  background-color: #383838;
   box-sizing: border-box;
+  color: var(--letter-white);
   font-family: 'Spectral', serif;
   font-size: 62.5%;
   margin: 0;

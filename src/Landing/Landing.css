@@ -5,11 +5,26 @@
   width: 100%;
 }
 
+.Header {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: center;
+  padding-left: 50px;
+  width: 50vw;
+  line-height: 50px;
+}
+
 .Name {
-  color: var(--letter-white);
-  font-size: 40px;
-  padding-top: 50vh;
-  padding-left: 25vw;
+  font-size: 50px;
+  letter-spacing: 7px;
+}
+
+.SubText {
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  line-height: 20px;
 }
 
 .Line {
@@ -17,7 +32,7 @@
   box-shadow: 0 10px 0 .1px var(--line-shadow);
   height: .5px;
   position: absolute;
-  width: 300vw;
+  width: 500vw;
 }
 
 .Upper {
@@ -26,4 +41,78 @@
 
 .Lower {
   bottom: 0;
+}
+
+@media only screen and (max-width: 950px) {
+  .Name {
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+
+  .SubText {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Header {
+    width: 60vw;
+    padding-left: 10px;
+  }
+
+  .Name {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
+  .SubText {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .Name {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .SubText {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Header {
+    padding-left: 20px;
+  }
+
+  .Name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .SubText {
+    font-size: 12.5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Header {
+    padding-left: 50px;
+    width: 50vw;
+  }
+
+  .Name {
+    line-height: 30px;
+  }
+
+  .SubText {
+    align-self: start;
+    line-height: 17px;
+    padding-left: 5px;
+    width: 150px;
+  }
 }

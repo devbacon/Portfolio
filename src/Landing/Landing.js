@@ -40,7 +40,10 @@ class Landing extends Component {
   render() {
     return (
       <div className="Landing">
-        <div className="Name">DEVON BACON</div>
+        <div className="Header">
+          <div className="Name">DEVON BACON</div>
+          <div className="SubText">Web Developer / Software Engineer</div>
+        </div>
         <div className="Line Upper" ref={this.lineUpper}></div>
         <div className="Line Lower" ref={this.lineLower}></div>
       </div>
