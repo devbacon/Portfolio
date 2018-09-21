@@ -41,13 +41,13 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className="Landing">
-        <div className="Header">
-          <div className="Name">DEVON BACON</div>
-          <div className="SubText">Web Developer / Software Engineer</div>
+      <div className="landing">
+        <div className="landing-header">
+          <div className="landing-name">DEVON BACON</div>
+          <div className="landing-subText">Web Developer / Software Engineer</div>
         </div>
-        <div className="Line One" ref={this.lineOne}></div>
-        <div className="Line Two" ref={this.lineTwo}></div>
+        <div className="line line-one" ref={this.lineOne}></div>
+        <div className="line line-two" ref={this.lineTwo}></div>
       </div>
     );
   }
