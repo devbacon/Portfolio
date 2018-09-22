@@ -8,21 +8,27 @@ class Landing extends Component {
     // Establish refs to edit elements
     this.lineOne = React.createRef();
     this.lineTwo = React.createRef();
-    this.lineThree = React.createRef();
-    this.lineFour = React.createRef();
+    this.aboutPage = React.createRef();
+    this.contactPage = React.createRef();
+    this.projectsPage = React.createRef();
   }
 
   componentDidMount() {
-    this.updateWindowDesign();
-    window.addEventListener('resize', this.updateWindowDesign);
+    this.renderLayout();
+    window.addEventListener('resize', this.renderLayout);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDesign);
+    window.removeEventListener('resize', this.renderLayout);
+  }
+
+  transitionTest = () => {
+    const lineOneStyle = this.lineOne.current.style;
+    lineOneStyle.transform = `translate(-50%, 100px) rotate(0deg)`;
   }
 
   // Adapt angle and offset of lines based on view dimensions
-  updateWindowDesign = () => {
+  renderLayout = () => {
     // Grab view dimensions and line refs
     const width = window.innerWidth;
     const height = window.innerHeight;
@@ -48,6 +54,9 @@ class Landing extends Component {
         </div>
         <div className="line line-one" ref={this.lineOne}></div>
         <div className="line line-two" ref={this.lineTwo}></div>
+        <h2 className="landing-about" ref={this.aboutPage}>About</h2>
+        <h2 className="landing-contact" ref={this.contact}>Contact</h2>
+        <h2 className="landing-projects" ref={this.projectsPage}>Projects</h2>
       </div>
     );
   }
