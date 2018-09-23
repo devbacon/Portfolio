@@ -8,9 +8,9 @@ class Landing extends Component {
     // Establish refs to edit elements
     this.lineOne = React.createRef();
     this.lineTwo = React.createRef();
-    this.aboutPage = React.createRef();
-    this.contactPage = React.createRef();
-    this.projectsPage = React.createRef();
+    this.aboutPageName = React.createRef();
+    this.contactPageName = React.createRef();
+    this.projectsPageName = React.createRef();
   }
 
   componentDidMount() {
@@ -27,9 +27,9 @@ class Landing extends Component {
     lineOneStyle.transform = `translate(-50%, 100px) rotate(0deg)`;
   }
 
-  // Adapt angle and offset of lines based on view dimensions
+  // Adapt line and word placement based on view dimensions
   renderLayout = () => {
-    // Grab view dimensions and line refs
+    // Grab view dimensions plus line and word refs
     const width = window.innerWidth;
     const height = window.innerHeight;
     const lineOneStyle = this.lineOne.current.style;
@@ -39,7 +39,7 @@ class Landing extends Component {
     const lineOneAngle = Math.atan2(height / 2 - 0, width - 0) * 180 / Math.PI;
     const lineTwoAngle = Math.atan2(height - 0, width /2 - width) * 180 / Math.PI;
 
-    // Alter angle and offset
+    // Alter angle and offset of lines and words
     lineOneStyle.transform = `translate(-50%) rotate(${lineOneAngle}deg)`;
     lineTwoStyle.left = `${width / 2}px`;
     lineTwoStyle.transform = `translate(-50%) rotate(${lineTwoAngle}deg)`;
@@ -47,16 +47,22 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className="landing">
+      <div className="landing-container">
         <div className="landing-header">
           <div className="landing-name">DEVON BACON</div>
           <div className="landing-subText">Web Developer / Software Engineer</div>
         </div>
         <div className="line line-one" ref={this.lineOne}></div>
         <div className="line line-two" ref={this.lineTwo}></div>
-        <h2 className="landing-about" ref={this.aboutPage}>About</h2>
-        <h2 className="landing-contact" ref={this.contact}>Contact</h2>
-        <h2 className="landing-projects" ref={this.projectsPage}>Projects</h2>
+        <div className="landing-about-container">
+          <h2 className="landing-about" ref={this.aboutPageName}>About</h2>
+        </div>
+        <div className="landing-contact-container">
+          <h2 className="landing-contact" ref={this.contactPageName}>Contact</h2>
+        </div>
+        <div className="landing-projects-container">
+          <h2 className="landing-projects" ref={this.projectsPageName}>Projects</h2>
+        </div>
       </div>
     );
   }
