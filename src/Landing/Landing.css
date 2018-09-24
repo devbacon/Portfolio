@@ -1,5 +1,5 @@
 .landing-container * {
-	transition: 1s;
+	/* transition: 1s; */
 }
 
 .landing-container {
@@ -31,47 +31,23 @@
 	padding-left: 2vw;
 }
 
-/* .landing-about,
-.landing-contact,
-.landing-projects {
-	font-size: 35px;
-	font-weight: 100;
-	position: absolute;
-	top: 0;
-	margin: 0;
-} */
-
-.landing-about,
-.landing-contact,
-.landing-projects {
-	font-size: 35px;
+.landing-pageName {
+	font-size: 30px;
   font-weight: 100;
   position: absolute;
 }
 
 .landing-about, .landing-contact {
-  top: -40px;
+  top: -60px;
 }
 
-.line {
-	border-bottom: 1px solid var(--line-main);
-	box-shadow: 0 8px 0 .1px var(--line-shadow);
-	position: absolute;
-	width: 500vw;
-}
-
-.line-one {
-	top: 0;
-}
-
-.line-two {
-	bottom: 0;
+.landing-projects {
+  top: -20px;
 }
 
 .zone {
   display: flex;
   border-bottom: 1px solid var(--line-main);
-  box-shadow: 0 8px 0 .1px var(--line-shadow);
   justify-content: center;
   position: absolute;
   top: 0;
@@ -79,20 +55,20 @@
 }
 
 .zone-one {
-
+  box-shadow: 0 8px 0 .1px var(--line-shadow);
 }
 
 .zone-two {
-
+  box-shadow: 0 -8px 0 .1px var(--line-shadow);
 }
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
 	.line {
 		box-shadow: 0 6px 0 .1px var(--line-shadow);
 	}
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width: 850px) {
 	.landing-header {
 		padding-top: 0;
 		padding-left: 7vw;
@@ -111,15 +87,21 @@
 		padding-left: 2vw;
   }
   
-	.landing-about,
-	.landing-contact,
-	.landing-projects {
+	.landing-pageName {
     font-size: 25px;
-    margin-top: 10px;
-	}
+  }
+  
+  .landing-about,
+  .landing-contact {
+    top: -50px;
+  }
+
+  .landing-projects {
+    top: -15px;
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px), (max-height: 500px) {
 	.landing-header {
 		padding-left: 20vw;
 		width: 150px;
@@ -135,5 +117,18 @@
 		font-size: 15px;
 		line-height: 18px;
 		padding-left: 3px;
-	}
+  }
+  
+  .landing-pageName {
+    font-size: 18px;
+  }
+
+  .landing-about,
+  .landing-contact {
+    top: -38px;
+  }
+
+  .landing-projects {
+    top: -8px;
+  }
 }
