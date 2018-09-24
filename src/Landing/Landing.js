@@ -32,6 +32,8 @@ class Landing extends Component {
     // Grab view dimensions plus line and word refs
     const width = window.innerWidth;
     const height = window.innerHeight;
+    const zoneOneLength = Math.sqrt(Math.pow(width, 2) + Math.pow(height / 2, 2));
+    const zoneTwoLength = Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height, 2))
     const zoneOneStyle = this.zoneOne.current.style;
     const zoneTwoStyle = this.zoneTwo.current.style;
     const aboutPageNameStyle = this.aboutPageName.current.style;
@@ -47,10 +49,10 @@ class Landing extends Component {
     zoneTwoStyle.left = `${width / 2}px`;
     zoneTwoStyle.transform = `translate(-50%) rotate(-${zoneTwoAngle}deg)`;
     zoneTwoStyle.marginLeft = `${width / 2}px`;
-
-    aboutPageNameStyle.marginLeft = `${width / 2}px`;
-    contactPageNameStyle.marginLeft = `${width - 50}px`;
-    projectsPageNameStyle.marginLeft = `-${width / 2}px`;
+    
+    aboutPageNameStyle.marginLeft = `${zoneOneLength / 2}px`;
+    contactPageNameStyle.marginLeft = `${zoneOneLength - zoneOneLength / 8}px`;
+    projectsPageNameStyle.marginLeft = `-${zoneTwoLength / 1.5}px`;
   }
 
   render() {
