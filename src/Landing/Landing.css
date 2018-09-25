@@ -17,29 +17,30 @@
 .landing-name {
 	font-size: 5vw;
 	letter-spacing: 2px;
-	line-height: 5vw;
+  line-height: 5vw;
+  margin: 0;
 }
 
 .landing-subText {
-	font-size: 2vw;
+  font-size: 2vw;
 	letter-spacing: .5px;
 	line-height: 2vw;
-	padding-left: 2vw;
+  padding-left: 8vw;
+  margin: 0;
 }
 
 .landing-pageName {
   cursor: pointer;
 	font-size: 3em;
-  font-weight: 100;
   position: absolute;
 }
 
 .landing-about, .landing-contact {
-  top: -60px;
+  top: -65px;
 }
 
 .landing-projects {
-  top: -20px;
+  top: -25px;
 }
 
 .zone {
@@ -94,7 +95,6 @@
 		font-size: 2.8vw;
 		letter-spacing: 1px;
 		line-height: 2vw;
-		padding-left: 2vw;
   }
   
 	.landing-pageName {
@@ -103,11 +103,11 @@
   
   .landing-about,
   .landing-contact {
-    top: -50px;
+    top: -55px;
   }
 
   .landing-projects {
-    top: -15px;
+    top: -20px;
   }
 }
 
@@ -126,7 +126,7 @@
 	.landing-subText {
 		font-size: 1.5em;
 		line-height: 18px;
-		padding-left: .3em;
+    padding-left: 4px;
   }
   
   .landing-pageName {
@@ -135,10 +135,10 @@
 
   .landing-about,
   .landing-contact {
-    top: -38px;
+    top: -40px;
   }
 
   .landing-projects {
-    top: -8px;
+    top: -15px;
   }
 }
