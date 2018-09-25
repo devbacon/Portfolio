@@ -104,15 +104,15 @@ class Landing extends Component {
     return (
       <div className="landing-container">
         <div className="landing-header" ref={this.header}>
-          <div className="landing-name">DEVON BACON</div>
-          <div className="landing-subText">Web Developer / Software Engineer</div>
+          <h1 className="landing-name">DEVON BACON</h1>
+          <h2 className="landing-subText">Full Stack Web Developer</h2>
         </div>
         <div className="zone zone-one" ref={this.zoneOne}>
-          <h2 className="landing-pageName landing-about" onClick={this.aboutTransition} ref={this.aboutPageName}>About</h2>
-          <h2 className="landing-pageName landing-contact" onClick={this.contactTransition} ref={this.contactPageName}>Contact</h2>
+          <h3 className="landing-pageName landing-about" onClick={this.aboutTransition} ref={this.aboutPageName}>About</h3>
+          <h3 className="landing-pageName landing-contact" onClick={this.contactTransition} ref={this.contactPageName}>Contact</h3>
         </div>
         <div className="zone zone-two" ref={this.zoneTwo}>
-          <h2 className="landing-pageName landing-projects" onClick={this.projectsTransition} ref={this.projectsPageName}>Projects</h2>
+          <h3 className="landing-pageName landing-projects" onClick={this.projectsTransition} ref={this.projectsPageName}>Projects</h3>
         </div>
       </div>
     );
