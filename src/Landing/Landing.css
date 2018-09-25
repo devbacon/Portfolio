@@ -113,7 +113,7 @@
 
 @media (max-width: 500px), (max-height: 500px) {
 	.landing-header {
-		padding-left: 20vw;
+		padding-left: 15vw;
 		width: 150px;
 	}
 
