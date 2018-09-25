@@ -6,11 +6,15 @@ class Landing extends Component {
     super(props);
 
     // Establish refs to edit elements
+    this.header = React.createRef();
     this.zoneOne = React.createRef();
     this.zoneTwo = React.createRef();
     this.aboutPageName = React.createRef();
     this.contactPageName = React.createRef();
     this.projectsPageName = React.createRef();
+
+    this.zoneOneStyle = null;
+    this.zoneTwoStyle = null;
   }
 
   componentDidMount() {
@@ -22,20 +26,17 @@ class Landing extends Component {
     window.removeEventListener('resize', this.renderLayout);
   }
 
-  transitionTest = () => {
-    const lineOneStyle = this.lineOne.current.style;
-    lineOneStyle.transform = `translate(-50%, 100px) rotate(0deg)`;
-  }
-
   // Adapt line and word placement based on view dimensions
   renderLayout = () => {
     // Grab view dimensions plus line and word refs
     const width = window.innerWidth;
     const height = window.innerHeight;
+
     const zoneOneLength = Math.sqrt(Math.pow(width, 2) + Math.pow(height / 2, 2));
     const zoneTwoLength = Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height, 2))
-    const zoneOneStyle = this.zoneOne.current.style;
-    const zoneTwoStyle = this.zoneTwo.current.style;
+    this.zoneOneStyle = this.zoneOne.current.style;
+    this.zoneTwoStyle = this.zoneTwo.current.style;
+
     const aboutPageNameStyle = this.aboutPageName.current.style;
     const contactPageNameStyle = this.contactPageName.current.style;
     const projectsPageNameStyle = this.projectsPageName.current.style;
@@ -45,14 +46,22 @@ class Landing extends Component {
     const zoneTwoAngle = Math.atan2(height, width / 2) * 180 / Math.PI;
 
     // Alter angle and offset of lines and words
-    zoneOneStyle.transform = `translate(-50%, -100%) rotate(${zoneOneAngle}deg)`;
-    zoneTwoStyle.left = `${width / 2}px`;
-    zoneTwoStyle.transform = `translate(-50%) rotate(-${zoneTwoAngle}deg)`;
-    zoneTwoStyle.marginLeft = `${width / 2}px`;
+    this.zoneOneStyle.transform = `translate(-50%) rotate(${zoneOneAngle}deg)`;
+    this.zoneTwoStyle.left = `${width / 2}px`;
+    this.zoneTwoStyle.transform = `translate(-50%) rotate(-${zoneTwoAngle}deg)`;
+    this.zoneTwoStyle.marginLeft = `${width / 2}px`;
     
     aboutPageNameStyle.marginLeft = `${zoneOneLength / 2}px`;
     contactPageNameStyle.marginLeft = `${zoneOneLength - zoneOneLength / 8}px`;
     projectsPageNameStyle.marginLeft = `-${zoneTwoLength / 1.5}px`;
+  }
+
+  contactTransition = () => {
+    
+  }
+
+  projectsTransition = () => {
+    
   }
 
   render() {
@@ -63,11 +72,11 @@ class Landing extends Component {
           <div className="landing-subText">Web Developer / Software Engineer</div>
         </div>
         <div className="zone zone-one" ref={this.zoneOne}>
-          <h2 className="landing-pageName landing-about" ref={this.aboutPageName}>About</h2>
-          <h2 className="landing-pageName landing-contact" ref={this.contactPageName}>Contact</h2>
+          <h2 className="landing-pageName landing-about" onClick={this.aboutTransition} ref={this.aboutPageName}>About</h2>
+          <h2 className="landing-pageName landing-contact" onClick={this.contactTransition} ref={this.contactPageName}>Contact</h2>
         </div>
         <div className="zone zone-two" ref={this.zoneTwo}>
-          <h2 className="landing-pageName landing-projects" ref={this.projectsPageName}>Projects</h2>
+          <h2 className="landing-pageName landing-projects" onClick={this.projectsTransition} ref={this.projectsPageName}>Projects</h2>
         </div>
       </div>
     );
