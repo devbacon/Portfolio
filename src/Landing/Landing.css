@@ -1,7 +1,3 @@
-.landing-container * {
-	/* transition: 1s; */
-}
-
 .landing-container {
 	height: 100%;
 	overflow: hidden;
@@ -32,7 +28,8 @@
 }
 
 .landing-pageName {
-	font-size: 30px;
+  cursor: pointer;
+	font-size: 3em;
   font-weight: 100;
   position: absolute;
 }
@@ -55,16 +52,29 @@
 }
 
 .zone-one {
-  box-shadow: 0 8px 0 .1px var(--line-shadow);
+  box-shadow: 0 8px 0 0.1px var(--line-shadow);
 }
 
 .zone-two {
-  box-shadow: 0 -8px 0 .1px var(--line-shadow);
+  box-shadow: 0 -8px 0 0.1px var(--line-shadow);
+}
+
+.header_hidden,
+.zone_hidden {
+  color: transparent;
+}
+
+.header_hidden {
+  transition: 0.2s;
+}
+
+.zone_hidden {
+  transition: 0.3s;
 }
 
 @media (max-width: 700px) {
 	.line {
-		box-shadow: 0 6px 0 .1px var(--line-shadow);
+		box-shadow: 0 6px 0 0.1px var(--line-shadow);
 	}
 }
 
@@ -88,7 +98,7 @@
   }
   
 	.landing-pageName {
-    font-size: 25px;
+    font-size: 2.5em;
   }
   
   .landing-about,
@@ -108,19 +118,19 @@
 	}
 
 	.landing-name {
-		font-size: 30px;
+		font-size: 3.0em;
 		line-height: 30px;
 		padding-bottom: 3px;
 	}
 
 	.landing-subText {
-		font-size: 15px;
+		font-size: 1.5em;
 		line-height: 18px;
-		padding-left: 3px;
+		padding-left: .3em;
   }
   
   .landing-pageName {
-    font-size: 18px;
+    font-size: 1.8em;
   }
 
   .landing-about,
