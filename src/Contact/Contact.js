@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header.js';
 import './Contact.css';
 
 class Contact extends Component {
   render() {
     return (
-      <div className="Contact"></div>
+      <div className="page-container">
+        <Header title="Contact" navItems={['Home', 'About', 'Projects']} />
+        <div className="page-body">
+
+        </div>
+      </div>
     );
   }
 }
