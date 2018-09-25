@@ -23,6 +23,13 @@ class Header extends Component {
             <div className="bar2" />
             <div className="bar3" />
 				  </div>
+          <div className="nav-items">
+            {this.state.collapsed ? null : this.props.navItems.map(item => (
+              <Link to={item === 'Home' ? '' : item.toLowerCase()}>
+                <h2 className="header-nav-item">{item}</h2>
+              </Link>
+            ))}
+          </div>
       
         </div>
       </div>
