@@ -27,7 +27,7 @@ class Header extends Component {
         this.hamburger.current.classList.toggle('cross');
       }, delay);
     } else {
-      this.navItems.current.style.top = '-65px';
+      this.navItems.current.style.top = '-80px';
       this.hamburger.current.classList.toggle('cross');
       setTimeout(() => {
         this.hamburger.current.classList.toggle('change');
@@ -46,7 +46,7 @@ class Header extends Component {
             <div className="bar3" />
 				  </div>
           <div className="nav-items" ref={this.navItems}>
-            {this.state.collapsed ? null : this.props.navItems.map(item => (
+            {this.props.navItems.map(item => (
               <Link to={item === 'Home' ? '' : item.toLowerCase()} key={item}>
                 <h2 className="header-nav-item">{item}</h2>
               </Link>
