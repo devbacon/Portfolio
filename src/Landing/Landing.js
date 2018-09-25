@@ -58,8 +58,8 @@ class Landing extends Component {
 
   
   activatePageTransition = (cb) => {
-    this.zoneOneStyle.transition = '1.5s';
-    this.zoneTwoStyle.transition = '2s';
+    this.zoneOneStyle.transition = '1s';
+    this.zoneTwoStyle.transition = '1s';
 
     const headerChildren = this.header.current.childNodes;
     const zoneChildren = [
@@ -75,22 +75,30 @@ class Landing extends Component {
     setTimeout(() => {
       this.zoneOneStyle.transition = '0s';
       this.zoneTwoStyle.transition = '0s';
-    }, 1000);
+    }, 2000);
   }
 
   aboutTransition = () => {
     this.activatePageTransition(() => {
-      this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight * 1.2}px) rotate(0deg)`;
-      this.zoneTwoStyle.transform = `translate(-40%) rotate(-90deg)`;
+      this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight}px) rotate(0deg)`;
+      this.zoneTwoStyle.transform = `translate(-49%) rotate(-90deg)`;
     });
+
+
   }
 
   contactTransition = () => {
-    
+    this.activatePageTransition(() => {
+      this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight}px) rotate(0deg)`;
+      this.zoneTwoStyle.transform = `translate(-71%) rotate(-90deg)`;
+    });
   }
 
   projectsTransition = () => {
-    
+    this.activatePageTransition(() => {
+      this.zoneOneStyle.transform = `translate(-50%, -10px) rotate(0deg)`;
+      this.zoneTwoStyle.transform = `translate(-71%) rotate(-90deg)`;
+    });
   }
 
   render() {
