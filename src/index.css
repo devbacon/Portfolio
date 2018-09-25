@@ -16,4 +16,5 @@ body {
 * {
   color: var(--letter-white);
   font-family: serif;
+  font-weight: 100;
 }
