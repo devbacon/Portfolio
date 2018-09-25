@@ -12,7 +12,7 @@ class Landing extends Component {
     this.aboutPageName = React.createRef();
     this.contactPageName = React.createRef();
     this.projectsPageName = React.createRef();
-
+    
     this.zoneOneStyle = null;
     this.zoneTwoStyle = null;
   }
@@ -56,6 +56,35 @@ class Landing extends Component {
     projectsPageNameStyle.marginLeft = `-${zoneTwoLength / 1.5}px`;
   }
 
+  
+  activatePageTransition = (cb) => {
+    this.zoneOneStyle.transition = '1.5s';
+    this.zoneTwoStyle.transition = '2s';
+
+    const headerChildren = this.header.current.childNodes;
+    const zoneChildren = [
+      ...this.zoneOne.current.childNodes, 
+      ...this.zoneTwo.current.childNodes
+    ];
+
+    headerChildren.forEach(child => { child.classList.add('header_hidden') });
+    zoneChildren.forEach(child => { child.classList.add('zone_hidden') });
+
+    cb();
+
+    setTimeout(() => {
+      this.zoneOneStyle.transition = '0s';
+      this.zoneTwoStyle.transition = '0s';
+    }, 1000);
+  }
+
+  aboutTransition = () => {
+    this.activatePageTransition(() => {
+      this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight * 1.2}px) rotate(0deg)`;
+      this.zoneTwoStyle.transform = `translate(-40%) rotate(-90deg)`;
+    });
+  }
+
   contactTransition = () => {
     
   }
@@ -67,7 +96,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing-container">
-        <div className="landing-header">
+        <div className="landing-header" ref={this.header}>
           <div className="landing-name">DEVON BACON</div>
           <div className="landing-subText">Web Developer / Software Engineer</div>
         </div>
