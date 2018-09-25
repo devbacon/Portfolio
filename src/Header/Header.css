@@ -23,7 +23,7 @@
 
 .header-nav {
   justify-content: space-around;
-  margin-right: 2%;
+  margin-right: 2.5%;
   text-align: center;
   width: 20%;
 }
@@ -35,11 +35,12 @@
 .nav-items {
   background: #484848;
   border-bottom: 1px solid white;
+  min-width: 150px;
   position: absolute;
-  right: 2%;
+  right: 0;
   text-align: center;
-  top: -65px;
-  transition: 1s;
+  top: -80px;
+  transition: 0.5s;
   width: 20%;
   z-index: -5;
 }
@@ -50,7 +51,7 @@
   width: 30px;
   height: 4px;
   background-color: white;
-  margin: 5px auto;
+  margin: 5px 0 0 auto;
   transition: 0.4s;
 }
 
