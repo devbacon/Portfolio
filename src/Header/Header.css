@@ -1,4 +1,5 @@
-.header-container {
+.header-container { 
+  background: #383838;
   align-items: center;
   border-bottom: 1px solid var(--line-main);
   display: flex;
@@ -16,7 +17,7 @@
 }
 
 .header-title {
-  font-size: 4em;
+  font-size: 3.3em;
   margin-left: 5%;
 }
 
@@ -24,15 +25,11 @@
   justify-content: space-around;
   margin-right: 2%;
   text-align: center;
-  width: 100px;
+  width: 20%;
 }
 
 .header-nav-item {
   font-size: 2em;
-}
-
-.nav-hamburger {
- 
 }
 
 .nav-items {
@@ -41,9 +38,10 @@
   position: absolute;
   right: 2%;
   text-align: center;
-  top: 65px;
-  width: 100px;
-  z-index: 1;
+  top: -65px;
+  transition: 1s;
+  width: 20%;
+  z-index: -5;
 }
 
 .bar1,
