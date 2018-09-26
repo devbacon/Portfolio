@@ -6,7 +6,7 @@ class About extends Component {
   render() {
     return (
       <div className="page-container">
-        <Header title="About" navItems={['Home', 'Contact', 'Projects']} />
+        <Header title="About" navItems={['Home', 'Contact', 'Projects']} history={this.props.history} />
         <div className="page-body">
 
         </div>
