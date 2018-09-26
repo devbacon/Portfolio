@@ -75,7 +75,7 @@ class Landing extends Component {
     setTimeout(() => {
       this.zoneOneStyle.transition = '0s';
       this.zoneTwoStyle.transition = '0s';
-      window.location=`/${page}`
+      this.props.history.push(`/${page}`);
     }, 400);
   }
 
