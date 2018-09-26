@@ -3,4 +3,18 @@
   width: 100vw;
 }
 
+.page-body {
+  margin: 100px 10%;
+  position: absolute;
+  width: 80%;
+  z-index: -20;
+}
 
+.page-overlay {
+  background: #383838;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: -15;
+  transition: 1s;
+}
