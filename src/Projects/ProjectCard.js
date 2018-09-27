@@ -15,6 +15,25 @@ class ProjectCard extends Component {
     }
   }
 
+  componentDidMount() {
+    this.tabs.summary.current.classList.add('tab_active');
+  }
+
+  selectTab = (tabName) => {
+    Object.entries(this.tabs).forEach(tab => {
+      const name = tab[0];
+      const element = tab[1];
+
+      if (name === tabName) {
+        element.current.classList.add('tab_active');
+      } else {
+        element.current.classList.remove('tab_active');
+      }
+    });
+
+    this.setState({ tab: tabName });
+  }
+
   render() {
     return (
       <div className="project-card-container">
