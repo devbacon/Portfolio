@@ -17,43 +17,52 @@ class Header extends Component {
 
   componentDidMount() {
     setTimeout(() => { 
-      this.header.current.style.marginTop = 0 
+      this.header.current.style.marginTop = 0;
     }, 50);
 
-    setTimeout(() => { 
-      this.props.overlay.current.style.background = 'none' 
+    setTimeout(() => {
+      this.props.overlay.current.style.background = 'none';
     }, 500);
+
+    setTimeout(() => {
+      this.props.overlay.current.style.visibility = 'hidden';
+    }, 1500);
   }
 
   goTo = (path) => {
     this.toggleNav();
+    this.props.overlay.current.style.visibility = 'visible';
     this.props.overlay.current.style.background = '#383838';
 
     setTimeout(() => {
       this.header.current.style.marginTop = '-100px';
-    }, 700);
+    }, 500);
     
     setTimeout(() => {
       this.props.history.push(`/${path}`);
-    }, 1200);
+    }, 1000);
   }
 
   toggleNav = () => {
     this.setState({ collapsed: !this.state.collapsed });
     const delay = 250
+    const navStyle = this.navItems.current.style;
+    const hamClass = this.hamburger.current.classList;
 
     // Use delay for smooth animation
     if (this.state.collapsed) {
-      this.navItems.current.style.top = '65px';
-      this.hamburger.current.classList.toggle('change');
+      navStyle.visibility = 'visible';
+      navStyle.top = '65px';
+      hamClass.toggle('change');
       setTimeout(() => {
-        this.hamburger.current.classList.toggle('cross');
+        hamClass.toggle('cross');
       }, delay);
     } else {
-      this.navItems.current.style.top = '-80px';
-      this.hamburger.current.classList.toggle('cross');
+      navStyle.visibility = 'hidden';
+      navStyle.top = '-80px';
+      hamClass.toggle('cross');
       setTimeout(() => {
-        this.hamburger.current.classList.toggle('change');
+        hamClass.toggle('change');
       }, delay);
     }
   }
