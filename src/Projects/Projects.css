@@ -45,12 +45,11 @@
 
 .card-image, .card-image img {
   height: 280px;
-  width: 500px;
 }
 
 .card-image {
   background: white;
-  margin: 20px auto 20px;
+  margin: 20px auto;
 }
 
 .tab_active {
@@ -62,5 +61,14 @@
   .page-body.project-body {
     top: 0px;
     padding: 0 10%;
+  }
+
+  .card-image, .card-image img {
+    height: 240px;
+  }
+
+  .card-tabs, .details-display  {
+    width: 347px;
+    margin: 0 auto;
   }
 }
