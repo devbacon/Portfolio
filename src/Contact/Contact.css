@@ -29,10 +29,6 @@
 }
 
 @media (max-width: 650px) {
-  .contact-body {
-    top: -30px;
-  }
-
   .contact-icons-container {
     margin-top: 10vh;
   }
