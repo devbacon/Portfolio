@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Header from '../Header/Header.js';
 import './Contact.css';
 
+import LinkedInIcon from '../media/images/linkedin-icon.png';
+import GitHubIcon from '../media/images/github-icon.png';
+import GmailIcon from '../media/images/gmail-icon.png';
+
 class Contact extends Component {
   constructor() {
     super();
