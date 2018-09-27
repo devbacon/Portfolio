@@ -58,8 +58,8 @@ class Landing extends Component {
 
   
   activatePageTransition = (cb, page) => {
-    this.zoneOneStyle.transition = '.5s';
-    this.zoneTwoStyle.transition = '.5s';
+    this.zoneOneStyle.transition = '.7s';
+    this.zoneTwoStyle.transition = '.7s';
 
     const headerChildren = this.header.current.childNodes;
     const zoneChildren = [
@@ -76,7 +76,7 @@ class Landing extends Component {
       this.zoneOneStyle.transition = '0s';
       this.zoneTwoStyle.transition = '0s';
       this.props.history.push(`/${page}`);
-    }, 400);
+    }, 600);
   }
 
   aboutTransition = () => {
