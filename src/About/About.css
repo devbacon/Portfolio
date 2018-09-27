@@ -1,5 +1,7 @@
-.about-body {
-  
+@media (max-width: 650px) {
+  .about-body {
+    top: -30px;
+  }
 }
 
 
