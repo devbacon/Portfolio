@@ -18,8 +18,32 @@ class Contact extends Component {
           overlay={this.overlay}
           history={this.props.history}
         />
-        <div className="page-body">
-          <h1>TESTING!!!</h1>
+        <div className="page-body contact-body">
+          <p>
+            If you would like to contact me, please send me an email at devon.bacon@gmail.com 
+            or message me via LinkedIn.
+          </p>
+          <p>
+            Feel free to get in touch for any reason, whether it be feed back on my portfolio site, a potential
+            collaboration or even just to talk about programming in general. I would love to hear from you.
+          </p>
+          <div className="contact-icons-container">
+            <div className="contact-icon linkedin">
+              <a href="https://www.linkedin.com/in/devon-bacon-692647107">
+                <img src={LinkedInIcon} alt="linkedin icon"/>
+              </a>
+            </div>
+            <div className="contact-icon github">
+              <a href="https://www.linkedin.com/in/devon-bacon-692647107">
+                <img src={GitHubIcon} alt="github icon"/>
+              </a>
+            </div>
+            <div className="contact-icon gmail">
+              <a href="https://www.linkedin.com/in/devon-bacon-692647107">
+                <img src={GmailIcon} alt="gmail icon"/>
+              </a>
+            </div>
+          </div>
         </div>
         <div className="page-overlay" ref={this.overlay}></div>
       </div>
