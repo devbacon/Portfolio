@@ -6,7 +6,7 @@
   height: 65px;
   justify-content: space-between;
   position: absolute;
-  margin-top: -100px;
+  margin-top: -80px;
   transition: 0.75s;
   width: 100%;
 }
@@ -27,19 +27,15 @@
 
 .header-nav {
   justify-content: space-around;
-  margin-right: 2.5%;
+  margin-right: 5%;
   text-align: center;
   width: 20%;
-}
-
-.header-nav-item {
-  font-size: 2em;
-  cursor: pointer;
 }
 
 .nav-items {
   background: #484848;
   border-bottom: 1px solid white;
+  visibility: hidden;
   min-width: 150px;
   position: absolute;
   right: 0;
@@ -48,6 +44,11 @@
   transition: 0.5s;
   width: 20%;
   z-index: -5;
+}
+
+.header-nav-item {
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .bar1,
