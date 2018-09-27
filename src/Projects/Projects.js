@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header.js';
+import ProjectCard from './ProjectCard.js';
 import './Projects.css';
+
+import ClosetRouletteImage from '../media/images/closet-roulette.png';
 
 class Projects extends Component {
   constructor() {
     super();
 
     this.overlay = React.createRef();
+
+    
   }
 
   render() {
@@ -18,8 +23,11 @@ class Projects extends Component {
           overlay={this.overlay}
           history={this.props.history}
         />
-        <div className="page-body">
-         <h1>TESTING!!!</h1>
+        <div className="page-body project-body">
+         <ProjectCard 
+          image={ClosetRouletteImage}
+         />
+         <ProjectCard />
         </div>
         <div className="page-overlay" ref={this.overlay}></div>
       </div>
