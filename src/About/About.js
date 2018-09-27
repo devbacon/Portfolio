@@ -18,7 +18,7 @@ class About extends Component {
           overlay={this.overlay}
           history={this.props.history}
         />
-        <div className="page-body" ref={this.pageBody}>
+        <div className="page-body about-body" ref={this.pageBody}>
           <p>
             Hello. My name is Devon Bacon and I am a programmer with a passion for web development here in the San Francisco Bay area.
           </p>
