@@ -4,7 +4,9 @@
 }
 
 .page-body {
+  font-size: 1.5rem;
   margin: 100px 10%;
+  padding: 0 5%;
   position: absolute;
   width: 80%;
   z-index: -20;
