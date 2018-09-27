@@ -66,7 +66,7 @@ class ProjectCard extends Component {
         <div className="card-image">
           <img 
             src={this.props.image} 
-            alt="Project Sample Image"
+            alt="Project Thumbnail"
           />
         </div>
       </div>
