@@ -16,7 +16,7 @@ class ProjectCard extends Component {
   }
 
   componentDidMount() {
-    this.tabs.summary.current.classList.add('tab_active');
+    this.tabs[this.state.tab].current.classList.add('tab_active');
   }
 
   selectTab = (tabName) => {
@@ -47,18 +47,18 @@ class ProjectCard extends Component {
               Summary
             </p>
             <p 
-              className="technology-tab" 
-              onClick={() => this.selectTab('technology')}
-              ref={this.tabs.technology}
-            >
-              Technology
-            </p>
-            <p 
               className="experience-tab" 
               onClick={() => this.selectTab('experience')}
               ref={this.tabs.experience}
             >
               Experience
+            </p>
+            <p 
+              className="technology-tab" 
+              onClick={() => this.selectTab('technology')}
+              ref={this.tabs.technology}
+            >
+              Technology
             </p>
           </div>
           <div className="details-display">{this.props[this.state.tab]}</div>
