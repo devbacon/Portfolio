@@ -83,6 +83,13 @@ class Projects extends Component {
           image={ClosetRouletteImage}
           link={"https://www.closetroulette.com/"}
          />
+         <ProjectCard 
+          summary={portfolioData.summary}
+          experience={portfolioData.experience}
+          technology={portfolioData.technology}
+          image={PortfolioImage}
+          link={"/"}
+         />
         </div>
         <div className="page-overlay" ref={this.overlay}></div>
       </div>
