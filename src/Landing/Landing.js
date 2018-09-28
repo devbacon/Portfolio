@@ -18,22 +18,44 @@ class Landing extends Component {
   }
 
   componentDidMount() {
-    this.renderLayout();
     window.addEventListener('resize', this.renderLayout);
+    this.renderLayout();
+    this.enterLanding();
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.renderLayout);
   }
 
+  enterLanding = () => {
+    if (window.previousLocation) {
+      const headerChildren = this.header.current.childNodes;
+      const zoneChildren = [
+        ...this.zoneOne.current.childNodes, 
+        ...this.zoneTwo.current.childNodes
+      ];
+  
+      headerChildren.forEach(child => {
+        child.style.transition = '0s';
+        child.classList.add('header_hidden'); 
+      });
+  
+      zoneChildren.forEach(child => { 
+        child.style.transition = '0s';
+        child.classList.add('zone_hidden') ;
+      });
+      
+  }
+
   // Adapt line and word placement based on view dimensions
   renderLayout = () => {
+    console.log('layout rendered');
     // Grab view dimensions plus line and word refs
     const width = window.innerWidth;
     const height = window.innerHeight;
 
     const zoneOneLength = Math.sqrt(Math.pow(width, 2) + Math.pow(height / 2, 2));
-    const zoneTwoLength = Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height, 2))
+    const zoneTwoLength = Math.sqrt(Math.pow(width / 2, 2) + Math.pow(height, 2));
     this.zoneOneStyle = this.zoneOne.current.style;
     this.zoneTwoStyle = this.zoneTwo.current.style;
 
@@ -103,7 +125,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing-container">
-        <div className="landing-header" ref={this.header}>
+        <div className="landing-header" onClick={this.enterLanding} ref={this.header}>
           <h1 className="landing-name">DEVON BACON</h1>
           <h2 className="landing-subText">Full Stack Web Developer</h2>
         </div>
