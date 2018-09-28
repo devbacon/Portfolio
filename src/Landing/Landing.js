@@ -65,7 +65,42 @@ class Landing extends Component {
           break;
       }
 
-      
+      setTimeout(() => {
+        this.zoneOneStyle.transition = '1s';
+        this.zoneTwoStyle.transition = '1s';
+
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+    
+        const zoneOneAngle = Math.atan2(height / 2, width) * 180 / Math.PI;
+        const zoneTwoAngle = Math.atan2(height, width / 2) * 180 / Math.PI;
+    
+        this.zoneOneStyle.transform = `translate(-50%) rotate(${zoneOneAngle}deg)`;
+        this.zoneTwoStyle.left = `${width / 2}px`;
+        this.zoneTwoStyle.transform = `translate(-50%) rotate(-${zoneTwoAngle}deg)`;
+        this.zoneTwoStyle.marginLeft = `${width / 2}px`;
+    
+        headerChildren.forEach(child => {
+          child.style.transition = '3s';
+          child.classList.remove('header_hidden'); 
+        });
+    
+        zoneChildren.forEach(child => { 
+          child.style.transition = '5s';
+          child.classList.remove('zone_hidden') ;
+        });
+      }, 5);
+
+      setTimeout(() => {
+        headerChildren.forEach(child => { child.style.transition = '.2s' });
+        zoneChildren.forEach(child => { child.style.transition = '.3s' });
+      }, 700);
+    }
+
+    setTimeout(() => {
+      this.zoneOneStyle.transition = '0s';
+      this.zoneTwoStyle.transition = '0s'; 
+    }, 800);
   }
 
   // Adapt line and word placement based on view dimensions
@@ -146,7 +181,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing-container">
-        <div className="landing-header" onClick={this.enterLanding} ref={this.header}>
+        <div className="landing-header" ref={this.header}>
           <h1 className="landing-name">DEVON BACON</h1>
           <h2 className="landing-subText">Full Stack Web Developer</h2>
         </div>
