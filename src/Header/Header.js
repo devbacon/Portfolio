@@ -18,14 +18,16 @@ class Header extends Component {
   componentDidMount() {
     setTimeout(() => { 
       this.header.current.style.marginTop = 0;
-    }, 50);
+    }, 100);
 
     setTimeout(() => {
       this.props.overlay.current.style.background = 'none';
     }, 500);
 
     setTimeout(() => {
-      this.props.overlay.current.style.visibility = 'hidden';
+      if (this.props.overlay.current){
+        this.props.overlay.current.style.visibility = 'hidden';
+      } 
     }, 1200);
   }
 
@@ -36,11 +38,11 @@ class Header extends Component {
 
     setTimeout(() => {
       this.header.current.style.marginTop = '-100px';
-    }, 400);
+    }, 100);
     
     setTimeout(() => {
       this.props.history.push(`/${path}`);
-    }, 800);
+    }, 500);
   }
 
   toggleNav = () => {
@@ -62,7 +64,7 @@ class Header extends Component {
       navStyle.visibility = 'hidden';
       navStyle.top = '-80px';
       hamClass.toggle('cross');
-      
+
       setTimeout(() => {
         hamClass.toggle('change');
       }, delay);
