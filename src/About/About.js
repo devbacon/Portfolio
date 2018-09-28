@@ -23,7 +23,7 @@ class About extends Component {
             Hello. My name is Devon Bacon and I am a programmer with a passion for web development here in the San Francisco Bay area.
           </p>
           <p>
-            I have been on the computer for what seems like my whole life tinkering with programs and playing games. It was in mid-2016 that I really began to delve into and understand what programs were composed of. These symbols and structures that translated into machine-readable bits and then into pulses of energy within the computer's hardware. This knowledge is what sparked my curiosity in the creation of software and continues to drive me toward perfecting my trade.
+            I have been on the computer for what seems like my entire life tinkering with programs and playing games. It was in mid-2016 that I really began to delve into and understand what programs were composed of. These symbols and structures that translated into machine-readable bits and then into pulses of energy within the computer's hardware. This knowledge is what sparked my curiosity in the creation of software and continues to drive me toward perfecting my trade.
           </p>
           <p>
             Before I began pursuing my passion for technology I was a roadway construction worker. My primary jobs were freeway traffic control and underground utility identification. I left that position after five years to become a self-employed dog trainer. Both of these occupations relied heavily on communication and problem-solving in very different ways.
