@@ -18,7 +18,7 @@
   position: fixed;
   width: 100%;
   z-index: -15;
-  transition: 1s;
+  transition: 0.7s;
 }
 
 @media (max-width: 650px) {
