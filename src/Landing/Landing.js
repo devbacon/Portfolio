@@ -44,6 +44,27 @@ class Landing extends Component {
         child.style.transition = '0s';
         child.classList.add('zone_hidden') ;
       });
+
+      switch(window.previousLocation.pathname) {
+        case '/about':
+          console.log('about hit');
+          this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight + 10}px) rotate(0deg)`;
+          this.zoneTwoStyle.transform = `translate(-49%) rotate(-90deg)`;
+          break;
+        case '/contact':
+          console.log('contact hit');
+          this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight + 10}px) rotate(0deg)`;
+          this.zoneTwoStyle.transform = `translate(-71%) rotate(-90deg)`;
+          break;
+        case '/projects':
+          console.log('projects hit');
+          this.zoneOneStyle.transform = `translate(-50%, -10px) rotate(0deg)`;
+          this.zoneTwoStyle.transform = `translate(-71%) rotate(-90deg)`;
+          break;
+        default:
+          break;
+      }
+
       
   }
 
