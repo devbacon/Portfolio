@@ -39,6 +39,26 @@ const closetRouletteData = {
   </div>
 }
 
+const portfolioData = {
+  summary: <div>
+    <p>I’m sure that this is fairly self-explanatory but this is my professional portfolio. As with most portfolios, it has some information in regards to myself, my projects and my contact info. What makes this one slightly different is that it is all custom made, including animation. One of the things I like most is coming up with unique or custom animations such as the landing page.</p>
+    <p>Please be sure to let me know if there are any improvements that I could make. Even the smallest critique is helpful. Also, make sure to stay tuned. There may be a few easter eggs put in very soon.</p>
+  </div>,
+  experience: <div>
+    <p>As stated in the summary, I enjoy making custom animations very much, especially when I can mix in some nifty functionality. Although it did take a bit longer than using a library like Bootstrap or MaterialsUI, this little project was a blast. Its base version was completed in one week, most of which was only part-time.</p>
+    <p>I used Adobe XD CC for a quick mockup and got to work. React made the primary layout easy as always. The most fun was probably the geometric algorithms to calculate the landing page line elements and fix them to the outer edges of the screen no matter what size it is.</p>
+  </div>,
+  technology: <div>
+    <p>
+      - <span className="tech-name">Javascript</span> : Base language used across entire app <br />
+      - <span className="tech-name">React</span> : Library used for component creation<br />
+      - <span className="tech-name">React Router</span> : React routing library<br />
+      - <span className="tech-name">HTML</span> : Component layout<br />
+      - <span className="tech-name">CSS</span> : Component styling<br />
+    </p>
+  </div>
+}
+
 class Projects extends Component {
   constructor() {
     super();
