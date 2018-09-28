@@ -3,10 +3,11 @@ import Header from '../Header/Header.js';
 import './About.css';
 
 class About extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.overlay = React.createRef();
+    window.previousLocation = props.location;
   }
 
   render() {
