@@ -26,7 +26,7 @@ class Header extends Component {
 
     setTimeout(() => {
       this.props.overlay.current.style.visibility = 'hidden';
-    }, 1500);
+    }, 1200);
   }
 
   goTo = (path) => {
@@ -36,11 +36,11 @@ class Header extends Component {
 
     setTimeout(() => {
       this.header.current.style.marginTop = '-100px';
-    }, 500);
+    }, 400);
     
     setTimeout(() => {
       this.props.history.push(`/${path}`);
-    }, 1000);
+    }, 800);
   }
 
   toggleNav = () => {
