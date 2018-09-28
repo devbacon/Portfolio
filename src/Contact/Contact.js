@@ -7,10 +7,11 @@ import GitHubIcon from '../media/images/github-icon.png';
 import GmailIcon from '../media/images/gmail-icon.png';
 
 class Contact extends Component {
-  constructor() {
-    super();
-
+  constructor(props) {
+    super(props);
+    
     this.overlay = React.createRef();
+    window.previousLocation = props.location;
   }
 
   render() {
