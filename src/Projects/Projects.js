@@ -60,10 +60,11 @@ const portfolioData = {
 }
 
 class Projects extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.overlay = React.createRef();
+    window.previousLocation = props.location;
   }
 
   render() {
