@@ -25,7 +25,8 @@ class Contact extends Component {
         <div className="page-body contact-body">
           <p>
             If you would like to contact me, please send me an email at devon.bacon@gmail.com 
-            or message me via LinkedIn.
+            or message me via LinkedIn. And of course, you can always check out my 
+            activity and latest projects on GitHub.
           </p>
           <p>
             Feel free to get in touch for any reason, whether it be feed back on my portfolio site, a potential
@@ -38,12 +39,12 @@ class Contact extends Component {
               </a>
             </div>
             <div className="contact-icon github">
-              <a href="https://www.linkedin.com/in/devon-bacon-692647107">
+              <a href="https://github.com/metalogicoder">
                 <img src={GitHubIcon} alt="github icon"/>
               </a>
             </div>
             <div className="contact-icon gmail">
-              <a href="https://www.linkedin.com/in/devon-bacon-692647107">
+              <a href="mailto:devon.bacon@gmail.com">
                 <img src={GmailIcon} alt="gmail icon"/>
               </a>
             </div>
