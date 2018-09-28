@@ -54,6 +54,7 @@ class Header extends Component {
       navStyle.visibility = 'visible';
       navStyle.top = '65px';
       hamClass.toggle('change');
+
       setTimeout(() => {
         hamClass.toggle('cross');
       }, delay);
@@ -61,6 +62,7 @@ class Header extends Component {
       navStyle.visibility = 'hidden';
       navStyle.top = '-80px';
       hamClass.toggle('cross');
+      
       setTimeout(() => {
         hamClass.toggle('change');
       }, delay);
