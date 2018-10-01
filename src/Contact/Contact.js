@@ -35,12 +35,12 @@ class Contact extends Component {
           </p>
           <div className="contact-icons-container">
             <div className="contact-icon linkedin">
-              <a href="https://www.linkedin.com/in/devon-bacon-692647107">
+              <a href="https://www.linkedin.com/in/devon-bacon-692647107" target="_blank">
                 <img src={LinkedInIcon} alt="linkedin icon"/>
               </a>
             </div>
             <div className="contact-icon github">
-              <a href="https://github.com/metalogicoder">
+              <a href="https://github.com/metalogicoder" target="_blank">
                 <img src={GitHubIcon} alt="github icon"/>
               </a>
             </div>
