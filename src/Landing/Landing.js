@@ -18,18 +18,17 @@ class Landing extends Component {
 	}
 
 	componentDidMount() {
-		window.addEventListener('resize', this.renderLayout);
+    window.addEventListener('resize', this.renderLayout);
 		this.renderLayout();
-		this.enterLanding();
+    this.enterLanding();
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('resize', this.renderLayout);
+    window.removeEventListener('resize', this.renderLayout);
 	}
 
 	// Adapt line and word placement based on view dimensions
 	renderLayout = () => {
-		console.log('layout rendered');
 		// Grab view dimensions plus line and word refs
 		const width = window.innerWidth;
 		const height = window.innerHeight;
@@ -74,7 +73,7 @@ class Landing extends Component {
 			});
 
 			switch (window.previousLocation.pathname) {
-				case '/about':
+        case '/about':
 					this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight + 10}px) rotate(0deg)`;
 					this.zoneTwoStyle.transform = `translate(-50%) rotate(-90deg)`;
 					this.zoneTwoStyle.marginLeft = `${window.innerWidth / 2 + 10}px`;
@@ -95,7 +94,7 @@ class Landing extends Component {
 
 			setTimeout(() => {
 				this.zoneOneStyle.transition = '1s';
-				this.zoneTwoStyle.transition = '1s';
+        this.zoneTwoStyle.transition = '1s';
 
 				const width = window.innerWidth;
 				const height = window.innerHeight;
@@ -117,7 +116,8 @@ class Landing extends Component {
 					child.style.transition = '5s';
 					child.classList.remove('zone_hidden');
 				});
-			}, 5);
+			}, 50);
+
 
 			setTimeout(() => {
 				headerChildren.forEach((child) => {
@@ -126,13 +126,13 @@ class Landing extends Component {
 				zoneChildren.forEach((child) => {
 					child.style.transition = '.3s';
 				});
-			}, 700);
+      }, 700);
+      
+      setTimeout(() => {
+        this.zoneOneStyle.transition = '0s';
+        this.zoneTwoStyle.transition = '0s';
+      }, 800);
 		}
-
-		setTimeout(() => {
-			this.zoneOneStyle.transition = '0s';
-			this.zoneTwoStyle.transition = '0s';
-		}, 800);
 	};
 
 	activatePageTransition = (cb, page) => {
