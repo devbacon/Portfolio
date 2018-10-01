@@ -126,7 +126,7 @@
 	}
 }
 
-@media (max-width: 500px), (max-height: 500px) {
+@media (max-width: 500px), (max-height: 300px) {
 	.landing-header {
 		padding-left: 15vw;
 		width: 150px;
