@@ -10,6 +10,12 @@ scrappedJS.js
 # production
 /build
 
+# firebase
+.firebase
+.firebaserc
+database.rules.json
+firebase.json
+
 # misc
 .DS_Store
 .env.local
