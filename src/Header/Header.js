@@ -62,7 +62,7 @@ class Header extends Component {
       }, delay);
     } else {
       navStyle.visibility = 'hidden';
-      navStyle.top = '-80px';
+      navStyle.top = '-110px';
       hamClass.toggle('cross');
 
       setTimeout(() => {
