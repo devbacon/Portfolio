@@ -64,10 +64,12 @@ class ProjectCard extends Component {
           <div className="details-display">{this.props[this.state.tab]}</div>
         </div>
         <div className="card-image">
-          <img 
-            src={this.props.image} 
-            alt="Project Thumbnail"
-          />
+          <a href={this.props.link}>
+            <img 
+              src={this.props.image} 
+              alt="Project Thumbnail"
+            />
+          </a>
         </div>
       </div>
     );
