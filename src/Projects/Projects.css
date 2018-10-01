@@ -1,84 +1,103 @@
 .page-body.project-body {
-  margin: 90px 0;
-  width: 100%;
+	margin: 90px 0;
+	width: 100%;
 }
 
 .project-card-container {
-  display: flex;
-  flex-flow: wrap-reverse;
-  justify-content: space-between;
-  margin-bottom: 30px;
+	display: flex;
+	flex-flow: wrap-reverse;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 .card-details {
-  margin: auto;
-  width: 600px;
+	margin: auto;
+	width: 600px;
 }
 
 .card-tabs {
-  display: flex;
+	display: flex;
 }
 
 .summary-tab,
 .technology-tab,
 .experience-tab {
-  border: 1px solid white;
-  font-size: 1.2rem;
-  padding: 3px 15px;
-  margin: 0;
+	border: 1px solid white;
+	font-size: 1.2rem;
+	padding: 3px 15px;
+	margin: 0;
 }
 
 .details-display {
-  border: 1px solid white;
-  height: 250px;
-  overflow: scroll;
-  padding: 0 20px;
+	border: 1px solid white;
+	height: 250px;
+	overflow: scroll;
+	padding: 0 20px;
 }
 
 .details-display p {
-  margin: 15px;
+	margin: 15px;
 }
 
 .tech-name {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-.card-image, .card-image img {
-  height: 280px;
+.card-image,
+.card-image img {
+	height: 280px;
 }
 
 .card-image {
-  background: white;
-  margin: 20px auto;
+	background: white;
+	margin: 20px auto;
 }
 
 .card-image img {
-  border: 1px solid white;
+	border: 1px solid white;
 }
 
 .tab_active {
-  color: black;
-  background: white;
+	color: black;
+	background: white;
 }
 
 @media (min-width: 700px) {
-  .card-image, .card-image img {
-    width: 600px;
-  }
+	.card-image,
+	.card-image img {
+		width: 600px;
+	}
 }
 
 @media (max-width: 700px) {
-  .page-body.project-body {
-    top: 0px;
-  }
+	.page-body.project-body {
+		top: 0px;
+	}
 
-  .card-image, .card-image img {
-    height: 240px;
-    width: 375px;
-  }
+	.card-image,
+	.card-image img {
+		height: 240px;
+		width: 375px;
+	}
 
-  .card-tabs, .details-display  {
-    width: 375px;
-    margin: 0 auto;
-  }
+	.card-tabs,
+	.details-display {
+		width: 375px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 500px) {
+	.card-image,
+  .card-image img,
+  .card-tabs,
+	.details-display {
+		width: 100%;
+	}
+
+	.summary-tab,
+	.technology-tab,
+	.experience-tab {
+		font-size: 1rem;
+	}
 }
