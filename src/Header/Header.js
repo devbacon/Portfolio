@@ -21,11 +21,13 @@ class Header extends Component {
     }, 100);
 
     setTimeout(() => {
-      this.props.overlay.current.style.background = 'none';
+      if (this.props.overlay.current) {
+        this.props.overlay.current.style.background = 'none';
+      }
     }, 500);
 
     setTimeout(() => {
-      if (this.props.overlay.current){
+      if (this.props.overlay.current) {
         this.props.overlay.current.style.visibility = 'hidden';
       } 
     }, 1200);
