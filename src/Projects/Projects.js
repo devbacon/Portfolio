@@ -89,7 +89,7 @@ class Projects extends Component {
           experience={portfolioData.experience}
           technology={portfolioData.technology}
           image={PortfolioImage}
-          link={"/"}
+          link={"https://dbacon-portfolio.herokuapp.com/"}
          />
         </div>
         <div className="page-overlay" ref={this.overlay}></div>
