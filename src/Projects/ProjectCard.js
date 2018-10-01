@@ -64,7 +64,7 @@ class ProjectCard extends Component {
           <div className="details-display">{this.props[this.state.tab]}</div>
         </div>
         <div className="card-image">
-          <a href={this.props.link}>
+          <a href={this.props.link} target="_blank">
             <img 
               src={this.props.image} 
               alt="Project Thumbnail"
