@@ -1,6 +1,6 @@
 .header-container { 
-  background: #383838;
   align-items: center;
+  background: #383838;
   border-bottom: 1px solid var(--line-main);
   display: flex;
   height: 65px;
@@ -35,20 +35,22 @@
 .nav-items {
   background: #484848;
   border-bottom: 1px solid white;
+  box-shadow: 10px 2px 15px 0 black;
   visibility: hidden;
   min-width: 150px;
   position: absolute;
   right: 0;
   text-align: center;
-  top: -80px;
+  top: -110px;
   transition: 0.4s;
   width: 20%;
   z-index: -5;
 }
 
 .header-nav-item {
-  font-size: 2em;
   cursor: pointer;
+  font-size: 2em;
+  padding: 5px 0;
 }
 
 .bar1,
