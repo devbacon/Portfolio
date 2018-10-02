@@ -45,19 +45,11 @@
 
 .zone {
   display: flex;
-  border-bottom: 1px solid var(--line-main);
+  border-bottom: 2px solid var(--line-main);
   justify-content: center;
   position: absolute;
   top: 0;
   width: 10000px;
-}
-
-.zone-one {
-  box-shadow: 0 8px 0 0.1px var(--line-shadow);
-}
-
-.zone-two {
-  box-shadow: 0 -8px 0 0.1px var(--line-shadow);
 }
 
 .header_hidden,
