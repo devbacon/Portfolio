@@ -23,6 +23,12 @@
   transition: 0.7s;
 }
 
+@media (max-width: 800px) {
+  .page-body {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 650px) {
   .page-body {
     margin: 80px 0;
