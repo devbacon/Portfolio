@@ -188,7 +188,7 @@ class Landing extends Component {
 					<h1 className="landing-name">DEVON BACON</h1>
 					<h2 className="landing-subText">Full Stack Web Developer</h2>
 				</div>
-				<div className="zone zone-one" ref={this.zoneOne}>
+				<div className="zone" ref={this.zoneOne}>
 					<h3
 						className="landing-pageName landing-about"
 						onClick={this.aboutTransition}
@@ -204,7 +204,7 @@ class Landing extends Component {
 						Contact
 					</h3>
 				</div>
-				<div className="zone zone-two" ref={this.zoneTwo}>
+				<div className="zone" ref={this.zoneTwo}>
 					<h3
 						className="landing-pageName landing-projects"
 						onClick={this.projectsTransition}
