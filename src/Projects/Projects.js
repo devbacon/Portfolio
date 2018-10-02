@@ -90,7 +90,7 @@ class Projects extends Component {
           experience={portfolioData.experience}
           technology={portfolioData.technology}
           image={PortfolioImage}
-          link={"https://dbacon-portfolio.herokuapp.com/"}
+          link={"https://devbacon.com/"}
           github={"https://github.com/metalogicoder/Portfolio"}
          />
         </div>
