@@ -39,10 +39,6 @@
 	margin: 0;
 }
 
-.technology-tab {
-	border-bottom-right-radius: 5px;
-}
-
 .details-body {
 	margin: 0;
 	padding: 0 20px;
@@ -73,7 +69,6 @@
 	background: white;
 	border-top: 1px solid white;
 	border-right: 1px solid white;
-	border-top-right-radius: 5px;
 	bottom: 0;
 	display: flex;
 	height: 38px;
