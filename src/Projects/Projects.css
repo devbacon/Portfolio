@@ -1,5 +1,5 @@
 .page-body.project-body {
-	margin: 90px 0;
+	margin: 80px 0;
 	width: 100%;
 }
 
@@ -15,28 +15,36 @@
 	width: 600px;
 }
 
-.card-tabs {
-	display: flex;
-}
-
-.summary-tab,
-.technology-tab,
-.experience-tab {
-	border: 1px solid white;
-	font-size: 1.2rem;
-	padding: 3px 15px;
-	margin: 0;
-}
-
 .details-display {
 	border: 1px solid white;
 	height: 250px;
+	position: relative;
 	overflow: scroll;
-	padding: 0 20px;
 }
 
-.details-display p {
-	margin: 15px;
+.card-tabs {
+	display: flex;
+	position: sticky;
+	top: 0;
+}
+
+.summary-tab,
+.experience-tab,
+.technology-tab {
+	background: #383838;
+	border: 1px solid white;
+	font-size: 1.2rem;
+	padding: 5px 15px;
+	margin: 0;
+}
+
+.technology-tab {
+	border-bottom-right-radius: 5px;
+}
+
+.details-body {
+	margin: 0;
+	padding: 0 20px;
 }
 
 .tech-name {
@@ -49,46 +57,46 @@
 }
 
 .card-image {
-  background: white;
+	background: white;
 	margin: 20px auto;
-  position: relative;
+	position: relative;
 }
 
 .card-image .card-image-preview {
-  border: 1px solid white;
-  z-index: -50;
+	border: 1px solid white;
+	z-index: -50;
 }
 
 .card-link-container {
-  align-items: center;
-  background: rgba(255, 255, 255, 0.90);
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-top-left-radius: 5px;
-  bottom: 0;
-  display: flex;
-  height: 38px;
-  justify-content: space-around;
-  padding: 0 0 0 5px;
-  position: absolute;
-  right: 0;
-  width: 100px;
+	align-items: center;
+	background: white;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-top-right-radius: 5px;
+	bottom: 0;
+	display: flex;
+	height: 38px;
+	justify-content: space-around;
+	padding: 0 0 0 5px;
+	position: absolute;
+	left: 0;
+	width: 100px;
 }
 
 .card-link-container .card-link {
-  cursor: pointer;
-  height: 30px;
-  margin-top: 5px;
-  width: 30px;
+	cursor: pointer;
+	height: 30px;
+	margin-top: 5px;
+	width: 30px;
 }
 
 .card-link-container .card-link-external {
-  margin-top: 3px;
+	margin-top: 3px;
 }
 
 .card-link-container .card-link-github {
-  height: 28px;
-  width: 29px;
+	height: 28px;
+	width: 29px;
 }
 
 .tab_active {
@@ -111,6 +119,7 @@
 	.card-image,
 	.card-image img {
 		height: 240px;
+		margin-bottom: 0;
 		width: 375px;
 	}
 
@@ -119,19 +128,27 @@
 		width: 375px;
 		margin: 0 auto;
 	}
+
+	.summary-tab,
+	.technology-tab,
+	.experience-tab {
+		border-top: none;
+	}
 }
 
 @media (max-width: 500px) {
-	.card-image,
-  .card-image img,
-  .card-tabs,
-	.details-display {
-		width: 100%;
+	.page-body.project-body {
+		margin: 80px 0 0;
+		padding: 0;
 	}
 
 	.summary-tab,
 	.technology-tab,
 	.experience-tab {
-		font-size: 1rem;
+		font-size: 1.1rem;
+	}
+
+	.details-body {
+		font-size: 1.2rem;
 	}
 }
