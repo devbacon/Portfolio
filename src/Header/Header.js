@@ -92,7 +92,8 @@ class Header extends Component {
               <div onClick={() => this.goTo(item === 'Home' ? '' : item.toLowerCase())}>
                 <h2 className="header-nav-item">{item}</h2>
               </div>
-              { item !== "Contact" ? <div className="nav-items-divide"></div> : null }
+              { item !== this.props.navItems[this.props.navItems.length - 1] ?
+                <div className="nav-items-divide"></div> : null }
             </div>
 					))}
 				</div>
