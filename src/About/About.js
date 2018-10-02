@@ -41,7 +41,7 @@ class About extends Component {
             Moving forward, I would like to contribute to open source projects as much as possible. I would like to find a company in which I can be a part of an experienced team or able to work under a skilled mentor. Doing anything that will allow me to learn from experienced developers or hone my expertise is exactly what I’m looking for.
           </p>
           <div className="about-image">
-            <img  src={AboutImage}/>
+            <img  src={AboutImage}  alt="devon bacon"/>
           </div>
         </div>
         <div className="page-overlay" ref={this.overlay}></div>
