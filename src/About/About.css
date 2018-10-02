@@ -1,1 +1,13 @@
+.about-image, .about-image img {
+  height: 210px;
+  width: 200px;
+}
 
+.about-image {
+  margin: 60px auto 0;
+}
+
+.about-image img {
+  border: 2px solid white;
+  border-radius: 50%;
+}
