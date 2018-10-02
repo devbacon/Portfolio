@@ -55,6 +55,7 @@ const portfolioData = {
       - <span className="tech-name">React Router</span> : React routing library<br />
       - <span className="tech-name">HTML</span> : Component layout<br />
       - <span className="tech-name">CSS</span> : Component styling<br />
+      - <span className="tech-name">Firebase</span> : Deployment platform<br />
     </p>
   </div>
 }
