@@ -18,13 +18,13 @@ class Landing extends Component {
 	}
 
 	componentDidMount() {
-    window.addEventListener('resize', this.renderLayout);
+		window.addEventListener('resize', this.renderLayout);
 		this.renderLayout();
-    this.enterLanding();
+		this.enterLanding();
 	}
 
 	componentWillUnmount() {
-    window.removeEventListener('resize', this.renderLayout);
+		window.removeEventListener('resize', this.renderLayout);
 	}
 
 	// Adapt line and word placement based on view dimensions
@@ -53,7 +53,7 @@ class Landing extends Component {
 		this.zoneTwoStyle.marginLeft = `${width / 2}px`;
 
 		aboutPageNameStyle.marginLeft = `${zoneOneLength / 2}px`;
-		contactPageNameStyle.marginLeft = `${zoneOneLength - zoneOneLength / 8}px`;
+		contactPageNameStyle.marginLeft = `${zoneOneLength - zoneOneLength / 9}px`;
 		projectsPageNameStyle.marginLeft = `-${zoneTwoLength / 1.5}px`;
 	};
 
@@ -73,7 +73,7 @@ class Landing extends Component {
 			});
 
 			switch (window.previousLocation.pathname) {
-        case '/about':
+				case '/about':
 					this.zoneOneStyle.transform = `translate(-50%, ${window.innerHeight + 10}px) rotate(0deg)`;
 					this.zoneTwoStyle.transform = `translate(-50%) rotate(-90deg)`;
 					this.zoneTwoStyle.marginLeft = `${window.innerWidth / 2 + 10}px`;
@@ -94,7 +94,7 @@ class Landing extends Component {
 
 			setTimeout(() => {
 				this.zoneOneStyle.transition = '1s';
-        this.zoneTwoStyle.transition = '1s';
+				this.zoneTwoStyle.transition = '1s';
 
 				const width = window.innerWidth;
 				const height = window.innerHeight;
@@ -118,7 +118,6 @@ class Landing extends Component {
 				});
 			}, 50);
 
-
 			setTimeout(() => {
 				headerChildren.forEach((child) => {
 					child.style.transition = '.2s';
@@ -126,12 +125,12 @@ class Landing extends Component {
 				zoneChildren.forEach((child) => {
 					child.style.transition = '.3s';
 				});
-      }, 700);
-      
-      setTimeout(() => {
-        this.zoneOneStyle.transition = '0s';
-        this.zoneTwoStyle.transition = '0s';
-      }, 800);
+			}, 700);
+
+			setTimeout(() => {
+				this.zoneOneStyle.transition = '0s';
+				this.zoneTwoStyle.transition = '0s';
+			}, 800);
 		}
 	};
 
