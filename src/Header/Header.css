@@ -32,6 +32,12 @@
   width: 20%;
 }
 
+.hamburger {
+  cursor: pointer;
+  margin-left: auto;
+  width: 30px;
+}
+
 .nav-items {
   background: #484848;
   border-bottom: 1px solid white;
