@@ -44,7 +44,9 @@ class ProjectCard extends Component {
 			<div className="project-card-container">
 				<div className="card-details">
 					<div className="details-display">
-						<div className="card-tabs">
+						<div className="details-body">{this.props[this.state.tab]}</div>
+					</div>
+          <div className="card-tabs">
 							<p
 								className="summary-tab"
 								onClick={() => this.selectTab('summary')}
@@ -67,8 +69,6 @@ class ProjectCard extends Component {
 								Technology
 							</p>
 						</div>
-						<div className="details-body">{this.props[this.state.tab]}</div>
-					</div>
 				</div>
 				<div className="card-image">
 					<img className="card-image-preview" src={this.props.image} alt="project preview" />
