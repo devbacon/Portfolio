@@ -11,20 +11,21 @@
 }
 
 .card-details {
-	margin: auto;
+  margin: auto;
+  position: relative;
 	width: 600px;
 }
 
 .details-display {
 	border: 1px solid white;
-	height: 250px;
-	position: relative;
+  height: 250px;
+  padding-top: 20px;
 	overflow: scroll;
 }
 
 .card-tabs {
 	display: flex;
-	position: sticky;
+	position: absolute;
 	top: 0;
 }
 
