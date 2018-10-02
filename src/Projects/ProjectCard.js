@@ -42,34 +42,6 @@ class ProjectCard extends Component {
 	render() {
 		return (
 			<div className="project-card-container">
-				<div className="card-details">
-					<div className="details-display">
-						<div className="details-body">{this.props[this.state.tab]}</div>
-					</div>
-          <div className="card-tabs">
-							<p
-								className="summary-tab"
-								onClick={() => this.selectTab('summary')}
-								ref={this.tabs.summary}
-							>
-								Summary
-							</p>
-							<p
-								className="experience-tab"
-								onClick={() => this.selectTab('experience')}
-								ref={this.tabs.experience}
-							>
-								Experience
-							</p>
-							<p
-								className="technology-tab"
-								onClick={() => this.selectTab('technology')}
-								ref={this.tabs.technology}
-							>
-								Technology
-							</p>
-						</div>
-				</div>
 				<div className="card-image">
 					<img className="card-image-preview" src={this.props.image} alt="project preview" />
 					<div className="card-link-container">
@@ -83,6 +55,30 @@ class ProjectCard extends Component {
 								alt="external link icon"
 							/>
 						</a>
+					</div>
+				</div>
+				<div className="card-details">
+					<div className="details-display">
+						<div className="details-body">{this.props[this.state.tab]}</div>
+					</div>
+					<div className="card-tabs">
+						<p className="summary-tab" onClick={() => this.selectTab('summary')} ref={this.tabs.summary}>
+							Summary
+						</p>
+						<p
+							className="experience-tab"
+							onClick={() => this.selectTab('experience')}
+							ref={this.tabs.experience}
+						>
+							Experience
+						</p>
+						<p
+							className="technology-tab"
+							onClick={() => this.selectTab('technology')}
+							ref={this.tabs.technology}
+						>
+							Technology
+						</p>
 					</div>
 				</div>
 			</div>
