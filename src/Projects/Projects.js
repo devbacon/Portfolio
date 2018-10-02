@@ -83,6 +83,7 @@ class Projects extends Component {
           technology={closetRouletteData.technology}
           image={ClosetRouletteImage}
           link={"https://www.closetroulette.com/"}
+          github={"https://github.com/Lambda-School-Labs/CS9-OutfitCreator"}
          />
          <ProjectCard 
           summary={portfolioData.summary}
@@ -90,6 +91,7 @@ class Projects extends Component {
           technology={portfolioData.technology}
           image={PortfolioImage}
           link={"https://dbacon-portfolio.herokuapp.com/"}
+          github={"https://github.com/metalogicoder/Portfolio"}
          />
         </div>
         <div className="page-overlay" ref={this.overlay}></div>
