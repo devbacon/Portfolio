@@ -40,16 +40,16 @@ class Header extends Component {
 
 		setTimeout(() => {
 			this.header.current.style.marginTop = '-100px';
-		}, 450);
+		}, 400);
 
 		setTimeout(() => {
 			this.props.history.push(`/${path}`);
-		}, 900);
+		}, 1000);
 	};
 
 	toggleNav = () => {
 		this.setState({ collapsed: !this.state.collapsed });
-		const delay = 250;
+		const delay = 400;
 		const navStyle = this.navItems.current.style;
 		const hamClass = this.hamburger.current.classList;
 
