@@ -64,7 +64,7 @@ class Header extends Component {
 			}, delay);
 		} else {
 			navStyle.visibility = 'hidden';
-			navStyle.top = '-110px';
+			navStyle.top = '-140px';
 			hamClass.toggle('cross');
 
 			setTimeout(() => {
@@ -88,9 +88,12 @@ class Header extends Component {
 				</div>
 				<div className="nav-items" ref={this.navItems}>
 					{this.props.navItems.map((item) => (
-						<div key={item} onClick={() => this.goTo(item === 'Home' ? '' : item.toLowerCase())}>
-							<h2 className="header-nav-item">{item}</h2>
-						</div>
+            <div key={item}>
+              <div onClick={() => this.goTo(item === 'Home' ? '' : item.toLowerCase())}>
+                <h2 className="header-nav-item">{item}</h2>
+              </div>
+              { item !== "Contact" ? <div className="nav-items-divide"></div> : null }
+            </div>
 					))}
 				</div>
 			</div>
