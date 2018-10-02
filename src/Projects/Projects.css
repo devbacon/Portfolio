@@ -127,8 +127,16 @@
 	.card-tabs,
 	.details-display {
 		width: 375px;
-		margin: 0 auto;
-	}
+  }
+  
+  .details-display {
+    margin: 0 auto;
+  }
+
+  .card-tabs {
+    left: 50%;
+    transform: translate(-50%);
+  }
 
 	.summary-tab,
 	.technology-tab,
