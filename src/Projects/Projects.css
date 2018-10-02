@@ -1,67 +1,28 @@
 .page-body.project-body {
-	margin: 80px 0;
-	width: 100%;
+  margin-top: 100px;
 }
 
 .project-card-container {
-	display: flex;
-	flex-flow: wrap-reverse;
-	justify-content: space-between;
-	margin-bottom: 30px;
-}
-
-.card-details {
-  margin: auto;
-  position: relative;
-	width: 600px;
-}
-
-.details-display {
-	border: 1px solid white;
-  height: 250px;
-  padding-top: 20px;
-	overflow: scroll;
-}
-
-.card-tabs {
-	display: flex;
-	position: absolute;
-	top: 0;
-}
-
-.summary-tab,
-.experience-tab,
-.technology-tab {
-	background: #383838;
-	border: 1px solid white;
-	font-size: 1.2rem;
-	padding: 5px 15px;
-	margin: 0;
-}
-
-.details-body {
-	margin: 0;
-	padding: 0 20px;
-}
-
-.tech-name {
-	text-decoration: underline;
-}
-
-.card-image,
-.card-image img {
-	height: 280px;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  margin: 0 auto 30px;
+  width: 700px;
 }
 
 .card-image {
-	background: white;
-	margin: 20px auto;
-	position: relative;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid white;
+  display: flex;
+  height: 320px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .card-image .card-image-preview {
-	border: 1px solid white;
-	z-index: -50;
+  height: 99.9%;
+  width: 99.9%;
 }
 
 .card-link-container {
@@ -69,7 +30,7 @@
 	background: white;
 	border-top: 1px solid white;
 	border-right: 1px solid white;
-	bottom: 0;
+	bottom: -1px;
 	display: flex;
 	height: 38px;
 	justify-content: space-around;
@@ -95,64 +56,75 @@
 	width: 29px;
 }
 
+.card-details {
+	position: relative;
+}
+
+.details-display {
+	padding-top: 20px;
+	overflow: scroll;
+}
+
+.card-tabs {
+  display: flex;
+	position: absolute;
+	top: 0;
+}
+
+.summary-tab,
+.experience-tab,
+.technology-tab {
+	background: #383838;
+  border: 1px solid white;
+  border-top: none;
+	padding: 5px 15px;
+	margin: 0;
+}
+
+.details-body {
+	margin: 0;
+	padding: 10px 30px;
+}
+
 .tab_active {
 	color: black;
 	background: white;
 }
 
-@media (min-width: 700px) {
-	.card-image,
-	.card-image img {
-		width: 600px;
-	}
+@media (max-width: 1000px) {
+  .project-card-container {
+    font-size: 1rem;
+    width: 600px;
+  }
 }
 
 @media (max-width: 700px) {
-	.page-body.project-body {
-		top: 0px;
-	}
-
-	.card-image,
-	.card-image img {
-		height: 240px;
-		margin-bottom: 0;
-		width: 375px;
-	}
-
-	.card-tabs,
-	.details-display {
-		width: 375px;
-  }
-  
-  .details-display {
-    margin: 0 auto;
+  .project-card-container {
+    width: 400px;
   }
 
-  .card-tabs {
-    left: 50%;
-    transform: translate(-50%);
+  .card-image {
+    height: 220px;
   }
-
-	.summary-tab,
-	.technology-tab,
-	.experience-tab {
-		border-top: none;
-	}
 }
 
 @media (max-width: 500px) {
-	.page-body.project-body {
-		margin: 80px 0 0;
-		padding: 0;
-	}
+  .page-body.project-body {
+    margin-top: 100px 0;
+    width: 100%;
+  }
 
-	.summary-tab,
-	.technology-tab,
-	.experience-tab {
-		font-size: 1.1rem;
-	}
+  .project-card-container {
+    width: 100%;
+  }
 
-	.details-body {
-		font-size: 1.2rem;
-	}
+  .card-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-tabs {
+    font-size: .8rem;
+  }
 }
