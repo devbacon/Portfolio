@@ -40,11 +40,11 @@ class Header extends Component {
 
 		setTimeout(() => {
 			this.header.current.style.marginTop = '-100px';
-		}, 100);
+		}, 450);
 
 		setTimeout(() => {
 			this.props.history.push(`/${path}`);
-		}, 500);
+		}, 900);
 	};
 
 	toggleNav = () => {
