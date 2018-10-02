@@ -78,7 +78,7 @@ class Header extends Component {
       <div className="header-container" ref={this.header}>
         <h1 className="header-title">{this.props.title}</h1>
         <div className="header-nav">
-          <div onClick={this.toggleNav} ref={this.hamburger}>
+          <div className="hamburger" onClick={this.toggleNav} ref={this.hamburger}>
             <div className="bar1" />
             <div className="bar2" />
             <div className="bar3" />
