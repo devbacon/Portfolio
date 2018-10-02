@@ -11,3 +11,14 @@
   border: 2px solid white;
   border-radius: 50%;
 }
+
+@media (max-width: 800px) {
+  .about-image, .about-image img {
+    height: 135px;
+    width: 130px;
+  }
+
+  .about-image {
+    margin: 10px auto 20px;
+  }
+}
