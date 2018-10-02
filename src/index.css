@@ -7,7 +7,6 @@
 body {
   background-color: #383838;
   box-sizing: border-box;
-  font-family: serif;
   font-size: 62.5%;
   margin: 0;
   padding: 0;
@@ -16,6 +15,6 @@ body {
 * {
   box-sizing: border-box;
   color: var(--letter-white);
-  font-family: serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
 }
