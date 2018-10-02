@@ -42,3 +42,15 @@
     width: 75px;
   }
 }
+
+@media (max-width: 450px) {
+  .contact-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .contact-icon a, .contact-icon img {
+    height: 62px;
+    width: 62px;
+  }
+}
