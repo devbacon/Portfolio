@@ -48,29 +48,30 @@ class Header extends Component {
 	};
 
 	toggleNav = () => {
-		this.setState({ collapsed: !this.state.collapsed });
-		const delay = 400;
-		const navStyle = this.navItems.current.style;
-		const hamClass = this.hamburger.current.classList;
+    this.props.history.push('/');
+		// this.setState({ collapsed: !this.state.collapsed });
+		// const delay = 400;
+		// const navStyle = this.navItems.current.style;
+		// const hamClass = this.hamburger.current.classList;
 
-		// Use delay for smooth animation
-		if (this.state.collapsed) {
-			navStyle.visibility = 'visible';
-			navStyle.top = '65px';
-			hamClass.toggle('change');
+		// // Use delay for smooth animation
+		// if (this.state.collapsed) {
+		// 	navStyle.visibility = 'visible';
+		// 	navStyle.top = '65px';
+		// 	hamClass.toggle('change');
 
-			setTimeout(() => {
-				hamClass.toggle('cross');
-			}, delay);
-		} else {
-			navStyle.visibility = 'hidden';
-			navStyle.top = '-140px';
-			hamClass.toggle('cross');
+		// 	setTimeout(() => {
+		// 		hamClass.toggle('cross');
+		// 	}, delay);
+		// } else {
+		// 	navStyle.visibility = 'hidden';
+		// 	navStyle.top = '-140px';
+		// 	hamClass.toggle('cross');
 
-			setTimeout(() => {
-				hamClass.toggle('change');
-			}, delay);
-		}
+		// 	setTimeout(() => {
+		// 		hamClass.toggle('change');
+		// 	}, delay);
+		// }
 	};
 
 	render() {
@@ -86,7 +87,7 @@ class Header extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="nav-items" ref={this.navItems}>
+				{/* <div className="nav-items" ref={this.navItems}>
 					{this.props.navItems.map((item) => (
             <div key={item}>
               <div onClick={() => this.goTo(item === 'Home' ? '' : item.toLowerCase())}>
@@ -96,7 +97,7 @@ class Header extends Component {
                 <div className="nav-items-divide"></div> : null }
             </div>
 					))}
-				</div>
+				</div> */}
 			</div>
 		);
 	}
