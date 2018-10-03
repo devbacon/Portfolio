@@ -67,17 +67,22 @@
 
 .card-tabs {
   display: flex;
-	position: absolute;
-	top: 0;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .summary-tab,
 .experience-tab,
 .technology-tab {
-	background: #383838;
+  display: flex;
+  background: #383838;
   border: 1px solid white;
   border-top: none;
-	padding: 5px 15px;
+  flex: 1;
+  justify-content: center;
+	padding: 5px 0;
 	margin: 0;
 }
 
