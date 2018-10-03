@@ -8,6 +8,7 @@ import PortfolioImage from '../media/images/portfolio.png';
 
 const closetRouletteData = {
   title: 'Closet Roulette',
+  image: ClosetRouletteImage,
   summary: <div>
     <p>Closet Roulette is a virtual wardrobe used to upload images of clothing, transforming them into digital attire. After you have uploaded the clothing that you want, you can then have an outfit recommended to you based on selected categories. Each of these categories represents a type of clothing such as shirts, bottoms, or shoes.</p>
     <p>You can save outfits based on the recommendation or even fine-tune the items manually. All outfits can be stored in the outfit archive to be viewed at any time. This app also offers features such as date selection so that you can see when you have worn an outfit and when you plan to wear it again.</p>
@@ -44,6 +45,7 @@ const closetRouletteData = {
 
 const portfolioData = {
   title: 'Professional Portfolio',
+  image: PortfolioImage,
   summary: <div>
     <p>I’m sure that this is fairly self-explanatory but this is my professional portfolio. As with most portfolios, it has some information in regards to myself, my projects and my contact info. What makes this one slightly different is that it is all custom made, including animation. One of the things I like most is coming up with unique or custom animations such as the landing page.</p>
     <p>Please be sure to let me know if there are any improvements that I could make. Even the smallest critique is helpful. Also, make sure to stay tuned. There may be a few easter eggs put in very soon.</p>
