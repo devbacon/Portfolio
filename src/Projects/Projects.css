@@ -9,9 +9,15 @@
   width: 700px;
 }
 
+.card-title {
+  background: var(--mat-black);
+  border-bottom: 1px solid white;
+  padding: 5px 20px;
+  width: 100%;
+}
+
 .card-image {
   align-items: center;
-  background: white;
   border-bottom: 1px solid white;
   display: flex;
   height: 320px;
@@ -57,6 +63,7 @@
 }
 
 .card-details {
+  background: var(--mat-black);
 	position: relative;
 }
 
@@ -100,6 +107,16 @@
   .project-card-container {
     font-size: 1rem;
     width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .project-card-container {
+    width: 500px;
+  }
+
+  .card-image {
+    height: 280px;
   }
 }
 
