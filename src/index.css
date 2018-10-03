@@ -1,12 +1,15 @@
 :root {
-  --letter-white: #FFFFFF;
-  --line-main: rgba(255, 255, 255, 0.8);
-  --line-shadow: rgb(88, 88, 88, 0.5);;
+  --true-black: #000;
+  --mat-black: #383838;
+  --dark-grey: #6E6E6E;
+  --light-grey: #A19F9F;
+  --light-tan: #DCB;
+  --letter-white: #EEE;
+  --line-white: #FFF;
 }
 
 body {
-  background-color: #383838;
-  box-sizing: border-box;
+  background-color: var(--mat-black);
   font-size: 62.5%;
   margin: 0;
   padding: 0;
