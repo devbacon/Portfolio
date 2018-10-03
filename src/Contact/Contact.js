@@ -30,7 +30,7 @@ class Contact extends Component {
             activity and latest projects on GitHub.
           </p>
           <p>
-            Feel free to get in touch for any reason, whether it be feed back on my portfolio site, a potential
+            Feel free to get in touch for any reason, whether it be feedback on my portfolio site, a potential
             collaboration or even just to talk about programming in general. I would love to hear from you.
           </p>
           <div className="contact-icons-container">
