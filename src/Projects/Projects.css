@@ -83,10 +83,11 @@
 .summary-tab,
 .experience-tab,
 .technology-tab {
-  display: flex;
   background: #383838;
   border: 1px solid white;
   border-top: none;
+  cursor: pointer;
+  display: flex;
   flex: 1;
   justify-content: center;
 	padding: 5px 0;
