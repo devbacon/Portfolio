@@ -4,11 +4,12 @@ import ExternalLinkIcon from '../media/images/external-link-icon.png';
 import GitHubIcon from '../media/images/github-icon.png';
 
 class ProjectCard extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+    super(props);
+    
+    this.project = this.props.project;
 
 		this.cardLinks = React.createRef();
-
 		this.tabs = {
 			summary: React.createRef(),
 			technology: React.createRef(),
@@ -16,7 +17,7 @@ class ProjectCard extends Component {
 		};
 
 		this.state = {
-			tab: 'summary'
+      tab: 'summary'
 		};
 	}
 
@@ -42,13 +43,14 @@ class ProjectCard extends Component {
 	render() {
 		return (
 			<div className="project-card-container">
+        <div className="card-title">{this.project.title}</div>
 				<div className="card-image">
-					<img className="card-image-preview" src={this.props.image} alt="project preview" />
+					<img className="card-image-preview" src={this.project.image} alt="project preview" />
 					<div className="card-link-container">
-						<a href={this.props.github} target="_blank" rel="noopener noreferrer">
+						<a href={this.project.github} target="_blank" rel="noopener noreferrer">
 							<img className="card-link card-link-github" src={GitHubIcon} alt="external link icon" />
 						</a>
-						<a href={this.props.link} target="_blank" rel="noopener noreferrer">
+						<a href={this.project.link} target="_blank" rel="noopener noreferrer">
 							<img
 								className="card-link card-link-external"
 								src={ExternalLinkIcon}
@@ -59,7 +61,7 @@ class ProjectCard extends Component {
 				</div>
 				<div className="card-details">
 					<div className="details-display">
-						<div className="details-body">{this.props[this.state.tab]}</div>
+						<div className="details-body">{this.project[this.state.tab]}</div>
 					</div>
 					<div className="card-tabs">
 						<p className="summary-tab" onClick={() => this.selectTab('summary')} ref={this.tabs.summary}>
