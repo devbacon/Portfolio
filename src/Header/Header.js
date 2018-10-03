@@ -45,10 +45,19 @@ class Header extends Component {
 		setTimeout(() => {
 			this.props.history.push(`/${path}`);
 		}, 1000);
-	};
+  };
+  
+  hideHeader = () => {
+    
+  }
 
 	toggleNav = () => {
-    this.props.history.push('/');
+    this.header.current.style.marginTop = '-100px';
+    
+    setTimeout(() => {
+      this.props.history.push('/');
+    }, 500);
+    
 		// this.setState({ collapsed: !this.state.collapsed });
 		// const delay = 400;
 		// const navStyle = this.navItems.current.style;
