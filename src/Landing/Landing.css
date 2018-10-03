@@ -1,4 +1,5 @@
 .landing-container {
+  background: var(--mat-black);
 	height: 100%;
 	overflow: hidden;
 	position: fixed;
@@ -45,7 +46,7 @@
 
 .zone {
   display: flex;
-  border-bottom: 2px solid var(--line-main);
+  border-bottom: 2px solid var(--line-white);
   justify-content: center;
   position: absolute;
   top: 0;
