@@ -63,7 +63,7 @@ class Header extends Component {
 		// const navStyle = this.navItems.current.style;
 		// const hamClass = this.hamburger.current.classList;
 
-		// // Use delay for smooth animation
+		
 		// if (this.state.collapsed) {
 		// 	navStyle.visibility = 'visible';
 		// 	navStyle.top = '65px';
