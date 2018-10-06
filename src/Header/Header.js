@@ -57,30 +57,7 @@ class Header extends Component {
     setTimeout(() => {
       this.props.history.push('/');
     }, 500);
-    
-		// this.setState({ collapsed: !this.state.collapsed });
-		// const delay = 400;
-		// const navStyle = this.navItems.current.style;
-		// const hamClass = this.hamburger.current.classList;
-
 		
-		// if (this.state.collapsed) {
-		// 	navStyle.visibility = 'visible';
-		// 	navStyle.top = '65px';
-		// 	hamClass.toggle('change');
-
-		// 	setTimeout(() => {
-		// 		hamClass.toggle('cross');
-		// 	}, delay);
-		// } else {
-		// 	navStyle.visibility = 'hidden';
-		// 	navStyle.top = '-140px';
-		// 	hamClass.toggle('cross');
-
-		// 	setTimeout(() => {
-		// 		hamClass.toggle('change');
-		// 	}, delay);
-		// }
 	};
 
 	render() {
