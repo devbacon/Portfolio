@@ -73,17 +73,7 @@ class Header extends Component {
 						</div>
 					</div>
 				</div>
-				{/* <div className="nav-items" ref={this.navItems}>
-					{this.props.navItems.map((item) => (
-            <div key={item}>
-              <div onClick={() => this.goTo(item === 'Home' ? '' : item.toLowerCase())}>
-                <h2 className="header-nav-item">{item}</h2>
-              </div>
-              { item !== this.props.navItems[this.props.navItems.length - 1] ?
-                <div className="nav-items-divide"></div> : null }
-            </div>
-					))}
-				</div> */}
+				
 			</div>
 		);
 	}
