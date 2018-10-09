@@ -35,29 +35,26 @@ class Header extends Component {
 
 	goTo = (path) => {
 		this.toggleNav();
-		this.props.overlay.current.style.visibility = 'visible';
 		this.props.overlay.current.style.background = '#383838';
+		this.props.overlay.current.style.visibility = 'visible';
 
 		setTimeout(() => {
-			this.header.current.style.marginTop = '-100px';
+      this.header.current.style.marginTop = '-100px';
 		}, 400);
 
 		setTimeout(() => {
 			this.props.history.push(`/${path}`);
 		}, 1000);
-  };
-  
-  hideHeader = () => {
-    
-  }
+	};
+
+	hideHeader = () => {};
 
 	toggleNav = () => {
     this.header.current.style.marginTop = '-100px';
-    
-    setTimeout(() => {
-      this.props.history.push('/');
-    }, 500);
-		
+
+		setTimeout(() => {
+			this.props.history.push('/');
+		}, 500);
 	};
 
 	render() {
@@ -73,7 +70,6 @@ class Header extends Component {
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		);
 	}
