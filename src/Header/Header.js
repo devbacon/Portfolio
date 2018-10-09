@@ -54,7 +54,7 @@ class Header extends Component {
 
 		setTimeout(() => {
 			this.props.history.push('/');
-		}, 500);
+		}, 600);
 	};
 
 	render() {
