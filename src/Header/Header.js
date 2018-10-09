@@ -47,8 +47,6 @@ class Header extends Component {
 		}, 1000);
 	};
 
-	hideHeader = () => {};
-
 	toggleNav = () => {
     this.props.overlay.current.style.background = '#383838';
     this.props.overlay.current.style.visibility = 'visible';
