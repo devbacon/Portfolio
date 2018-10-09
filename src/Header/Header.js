@@ -18,7 +18,7 @@ class Header extends Component {
 	componentDidMount() {
 		setTimeout(() => {
 			this.header.current.style.marginTop = 0;
-		}, 100);
+		}, 200);
 
 		setTimeout(() => {
 			if (this.props.overlay.current) {
