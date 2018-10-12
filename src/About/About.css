@@ -1,24 +1,26 @@
-.about-image, .about-image img {
-  height: 210px;
-  width: 200px;
+.about-image,
+.about-image img {
+	height: 210px;
+	width: 200px;
 }
 
 .about-image {
-  margin: 20px auto 40px;
+	margin: 20px auto 40px;
 }
 
 .about-image img {
-  border: 2px solid white;
-  border-radius: 50%;
+	border: 2px solid white;
+	border-radius: 50%;
 }
 
 @media (max-width: 800px) {
-  .about-image, .about-image img {
-    height: 135px;
-    width: 130px;
-  }
+	.about-image,
+	.about-image img {
+		height: 135px;
+		width: 130px;
+	}
 
-  .about-image {
-    margin: 10px auto 20px;
-  }
+	.about-image {
+		margin: 10px auto 20px;
+	}
 }
