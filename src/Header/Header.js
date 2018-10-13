@@ -39,7 +39,7 @@ class Header extends Component {
 		this.props.overlay.current.style.visibility = 'visible';
 
 		setTimeout(() => {
-      this.header.current.style.marginTop = '-100px';
+			this.header.current.style.marginTop = '-100px';
 		}, 400);
 
 		setTimeout(() => {
@@ -48,9 +48,9 @@ class Header extends Component {
 	};
 
 	toggleNav = () => {
-    this.props.overlay.current.style.background = '#383838';
-    this.props.overlay.current.style.visibility = 'visible';
-    this.header.current.style.marginTop = '-100px';
+		this.props.overlay.current.style.background = '#383838';
+		this.props.overlay.current.style.visibility = 'visible';
+		this.header.current.style.marginTop = '-100px';
 
 		setTimeout(() => {
 			this.props.history.push('/');
