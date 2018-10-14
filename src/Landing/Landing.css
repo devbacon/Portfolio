@@ -1,5 +1,5 @@
 .landing-container {
-  background: var(--mat-black);
+	background: var(--mat-black);
 	height: 100%;
 	overflow: hidden;
 	position: fixed;
@@ -18,52 +18,53 @@
 .landing-name {
 	font-size: 5vw;
 	letter-spacing: 2px;
-  line-height: 5vw;
-  margin: 0;
+	line-height: 5vw;
+	margin: 0;
 }
 
 .landing-subText {
-  font-size: 2vw;
+	font-size: 2vw;
 	letter-spacing: .5px;
 	line-height: 2vw;
-  padding-left: 8vw;
-  margin: 0;
+	padding-left: 8vw;
+	margin: 0;
 }
 
 .landing-pageName {
-  cursor: pointer;
+	cursor: pointer;
 	font-size: 2rem;
-  position: absolute;
+	position: absolute;
 }
 
-.landing-about, .landing-contact {
-  top: -70px;
+.landing-about,
+.landing-contact {
+	top: -70px;
 }
 
 .landing-projects {
-  top: -29px;
+	top: -29px;
 }
 
 .zone {
-  display: flex;
-  border-bottom: 2px solid var(--line-white);
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  width: 10000px;
+	display: flex;
+	border-bottom: 2px solid var(--line-white);
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	width: 10000px;
 }
 
 .header_hidden,
 .zone_hidden {
-  color: transparent;
+	color: transparent;
 }
 
 .header_hidden {
-  transition: 0.2s;
+	transition: 0.2s;
 }
 
 .zone_hidden {
-  transition: 0.3s;
+	transition: 0.3s;
 }
 
 @media (max-width: 1200px) {
@@ -81,36 +82,36 @@
 	.landing-subText {
 		font-size: 2.8vw;
 		letter-spacing: 1px;
-    line-height: 2vw;
-  }
-  
-	.landing-pageName {
-    font-size: 2.2rem;
-  }
-  
-  .landing-about,
-  .landing-contact {
-    top: -75px;
-  }
+		line-height: 2vw;
+	}
 
-  .landing-projects {
-    top: -34px;
-  }
+	.landing-pageName {
+		font-size: 2.2rem;
+	}
+
+	.landing-about,
+	.landing-contact {
+		top: -75px;
+	}
+
+	.landing-projects {
+		top: -34px;
+	}
 }
 
 @media (max-width: 800px) {
-  .landing-pageName {
-    font-size: 1.7rem;
-  }
+	.landing-pageName {
+		font-size: 1.7rem;
+	}
 
-  .landing-about,
-  .landing-contact {
-    top: -58px;
-  }
+	.landing-about,
+	.landing-contact {
+		top: -58px;
+	}
 
-  .landing-projects {
-    top: -25px;
-  }
+	.landing-projects {
+		top: -25px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -134,20 +135,20 @@
 	.landing-subText {
 		font-size: 1rem;
 		line-height: 18px;
-    padding-left: 4px;
-    width: 150px;
-  }
-  
-  .landing-pageName {
-    font-size: 1.4rem;
-  }
+		padding-left: 4px;
+		width: 150px;
+	}
 
-  .landing-about,
-  .landing-contact {
-    top: -48px;
-  }
+	.landing-pageName {
+		font-size: 1.4rem;
+	}
 
-  .landing-projects {
-    top: -19px;
-  }
+	.landing-about,
+	.landing-contact {
+		top: -48px;
+	}
+
+	.landing-projects {
+		top: -19px;
+	}
 }
