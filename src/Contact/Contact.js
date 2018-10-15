@@ -44,7 +44,7 @@ class Contact extends Component {
 							</a>
 						</div>
 						<div className="contact-icon github">
-							<a href="https://github.com/metalogicoder" target="_blank" rel="noopener noreferrer">
+							<a href="https://github.com/devbacon" target="_blank" rel="noopener noreferrer">
 								<img src={GitHubIcon} alt="github icon" />
 							</a>
 						</div>
