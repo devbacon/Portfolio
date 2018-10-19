@@ -8,9 +8,10 @@ import PortfolioImage from '../media/images/portfolio.png';
 
 const closetRouletteData = {
 	title: 'Closet Roulette',
-	image: ClosetRouletteImage,
+  image: ClosetRouletteImage,
+  video: "https://www.youtube.com/embed/w1o4QhaKtUg",
 	summary: (
-		<div>
+		<React.Fragment>
 			<p>
 				Closet Roulette is a virtual wardrobe used to upload images of clothing, transforming them into digital
 				attire. After you have uploaded the clothing that you want, you can then have an outfit recommended to
@@ -22,10 +23,10 @@ const closetRouletteData = {
 				be stored in the outfit archive to be viewed at any time. This app also offers features such as date
 				selection so that you can see when you have worn an outfit and when you plan to wear it again.
 			</p>
-		</div>
+		</React.Fragment>
 	),
 	experience: (
-		<div>
+		<React.Fragment>
 			<p>
 				A team of four developers and myself created this project in four short weeks. We were given nothing but
 				a minimum viable product and a rough mock-up. Beyond that, we had to discuss what approach, best
@@ -37,10 +38,10 @@ const closetRouletteData = {
 				were able to create Closet Roulette. This experience taught me so much about team dynamics and
 				cooperation that I will never forget.
 			</p>
-		</div>
+		</React.Fragment>
 	),
 	technology: (
-		<div>
+		<React.Fragment>
 			<p>
 				- <span className="tech-name">Javacript</span> : Base language used across entire app <br />
 				- <span className="tech-name">React</span> : Library used for component creation<br />
@@ -61,7 +62,7 @@ const closetRouletteData = {
 				- <span className="tech-name">Sendgrid</span> : Email verification and notice<br />
 				- <span className="tech-name">Heroku</span> : Deployment platform<br />
 			</p>
-		</div>
+		</React.Fragment>
 	),
 	link: 'https://www.closetroulette.com/',
 	github: 'https://github.com/Lambda-School-Labs/CS9-OutfitCreator'
@@ -71,7 +72,7 @@ const portfolioData = {
 	title: 'Professional Portfolio',
 	image: PortfolioImage,
 	summary: (
-		<div>
+		<React.Fragment>
 			<p>
 				I’m sure that this is fairly self-explanatory but this is my professional portfolio. As with most
 				portfolios, it has some information in regards to myself, my projects and my contact info. What makes
@@ -82,10 +83,10 @@ const portfolioData = {
 				Please be sure to let me know if there are any improvements that I could make. Even the smallest
 				critique is helpful. Also, make sure to stay tuned. There may be a few easter eggs put in very soon.
 			</p>
-		</div>
+		</React.Fragment>
 	),
 	experience: (
-		<div>
+		<React.Fragment>
 			<p>
 				As stated in the summary, I enjoy making custom animations very much, especially when I can mix in some
 				nifty functionality. Although it did take a bit longer than using a library like Bootstrap or
@@ -97,10 +98,10 @@ const portfolioData = {
 				most fun was probably the geometric algorithms to calculate the landing page line elements and fix them
 				to the outer edges of the screen no matter what size it is.
 			</p>
-		</div>
+		</React.Fragment>
 	),
 	technology: (
-		<div>
+		<React.Fragment>
 			<p>
 				- <span className="tech-name">Javascript</span> : Base language used across entire app <br />
 				- <span className="tech-name">React</span> : Library used for component creation<br />
@@ -109,7 +110,7 @@ const portfolioData = {
 				- <span className="tech-name">CSS</span> : Component styling<br />
 				- <span className="tech-name">Firebase</span> : Deployment platform<br />
 			</p>
-		</div>
+		</React.Fragment>
 	),
 	link: 'https://devbacon.com/',
 	github: 'https://github.com/metalogicoder/Portfolio'
