@@ -3,7 +3,6 @@
 }
 
 .project-card-container {
-  border: 1px solid white;
   font-size: 1.2rem;
   margin: 0 auto 30px;
   width: 700px;
@@ -11,14 +10,16 @@
 
 .card-title {
   background: var(--mat-black);
-  border-bottom: 1px solid white;
   padding: 5px 20px;
   width: 100%;
 }
 
+.card-video, .card-image {
+  border: 1px solid white;
+}
+
 .card-image {
   align-items: center;
-  border-bottom: 1px solid white;
   display: flex;
   height: 320px;
   justify-content: center;
@@ -27,39 +28,25 @@
 }
 
 .card-image .card-image-preview {
-  height: 99.9%;
-  width: 99.9%;
+  height: 100%;
+  width: 100%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-link-container {
-	align-items: center;
-	background: white;
-	border-top: 1px solid white;
-	border-right: 1px solid white;
-	bottom: -1px;
-	display: flex;
-	height: 38px;
-	justify-content: space-around;
-	padding: 0 0 0 5px;
-	position: absolute;
-	left: 0;
-	width: 100px;
+  align-items: center;
+  background: white;
+  display: flex;
 }
 
 .card-link-container .card-link {
-	cursor: pointer;
-	height: 30px;
-	margin-top: 5px;
-	width: 30px;
-}
-
-.card-link-container .card-link-external {
-	margin-top: 3px;
-}
-
-.card-link-container .card-link-github {
-	height: 28px;
-	width: 29px;
+  margin: 5px 10px 0;
+  height: 25px;
+	width: 25px;
 }
 
 .card-details {
@@ -84,7 +71,6 @@
 .experience-tab,
 .technology-tab {
   background: #383838;
-  border: 1px solid white;
   border-top: none;
   cursor: pointer;
   display: flex;
