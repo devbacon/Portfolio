@@ -45,7 +45,17 @@ class ProjectCard extends Component {
 			<div className="project-card-container">
 				<div className="card-title">{this.project.title}</div>
 				<div className="card-image">
-					<img className="card-image-preview" src={this.project.image} alt="project preview" />
+					{this.project.video ? (
+						<iframe
+              className="card-video"
+							src={this.project.video}
+							frameborder="0"
+							allow="autoplay; encrypted-media"
+							allowfullscreen
+						/>
+					) : (
+						<img className="card-image-preview" src={this.project.image} alt="project preview" />
+					)}
 					<div className="card-link-container">
 						<a href={this.project.github} target="_blank" rel="noopener noreferrer">
 							<img className="card-link card-link-github" src={GitHubIcon} alt="external link icon" />
