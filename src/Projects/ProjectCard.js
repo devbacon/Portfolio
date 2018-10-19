@@ -23,7 +23,11 @@ class ProjectCard extends Component {
 
 	componentDidMount() {
 		this.tabs[this.state.tab].current.classList.add('tab_active');
-	}
+  }
+  
+  toggleLinks() {
+
+  }
 
 	selectTab = (tabName) => {
 		Object.entries(this.tabs).forEach((tab) => {
@@ -47,11 +51,14 @@ class ProjectCard extends Component {
 				<div className="card-image">
 					{this.project.video ? (
 						<iframe
+              width="100%"
+              height="100%"
               className="card-video"
+              onClick={this.toggleLinks}
 							src={this.project.video}
 							frameborder="0"
 							allow="autoplay; encrypted-media"
-							allowfullscreen
+              allowfullscreen="true"
 						/>
 					) : (
 						<img className="card-image-preview" src={this.project.image} alt="project preview" />
