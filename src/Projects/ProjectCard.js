@@ -5,9 +5,9 @@ import GitHubIcon from '../media/images/github-icon.png';
 
 class ProjectCard extends Component {
 	constructor(props) {
-    super(props);
-    
-    this.project = this.props.project;
+		super(props);
+
+		this.project = this.props.project;
 
 		this.cardLinks = React.createRef();
 		this.tabs = {
@@ -17,7 +17,7 @@ class ProjectCard extends Component {
 		};
 
 		this.state = {
-      tab: 'summary'
+			tab: 'summary'
 		};
 	}
 
@@ -43,7 +43,7 @@ class ProjectCard extends Component {
 	render() {
 		return (
 			<div className="project-card-container">
-        <div className="card-title">{this.project.title}</div>
+				<div className="card-title">{this.project.title}</div>
 				<div className="card-image">
 					<img className="card-image-preview" src={this.project.image} alt="project preview" />
 					<div className="card-link-container">
