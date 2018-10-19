@@ -27,7 +27,7 @@ class About extends Component {
 					</div>
 					<p>
 						Hello, my name is Devon Bacon. I am a programmer with a passion for web development living in
-						the San Francisco Bay area.
+						the San Francisco Bay Area.
 					</p>
 					<p>
 						Before becoming a programmer my primary professions were freeway traffic control, underground
