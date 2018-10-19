@@ -13,7 +13,7 @@ class ProjectCard extends Component {
 		this.tabs = {
 			summary: React.createRef(),
 			technology: React.createRef(),
-			experience: React.createRef()
+      experience: React.createRef(),
 		};
 
 		this.state = {
@@ -25,8 +25,8 @@ class ProjectCard extends Component {
 		this.tabs[this.state.tab].current.classList.add('tab_active');
   }
   
-  toggleLinks() {
-
+  toggleLinks = () => {
+    this.cardLinks.current.classList.toggle('hidden');
   }
 
 	selectTab = (tabName) => {
@@ -48,13 +48,14 @@ class ProjectCard extends Component {
 		return (
 			<div className="project-card-container">
 				<div className="card-title">{this.project.title}</div>
-				<div className="card-image">
+				<div className="card-image" onClick={this.toggleLinks}>
 					{this.project.video ? (
 						<iframe
               width="100%"
               height="100%"
               className="card-video"
-              onClick={this.toggleLinks}
+              onMouseEnter={this.toggleLinks}
+              onMouseOut={this.toggleLinks}
 							src={this.project.video}
 							frameborder="0"
 							allow="autoplay; encrypted-media"
@@ -63,7 +64,7 @@ class ProjectCard extends Component {
 					) : (
 						<img className="card-image-preview" src={this.project.image} alt="project preview" />
 					)}
-					<div className="card-link-container">
+					<div className="card-link-container" ref={this.cardLinks}>
 						<a href={this.project.github} target="_blank" rel="noopener noreferrer">
 							<img className="card-link card-link-github" src={GitHubIcon} alt="external link icon" />
 						</a>
@@ -78,7 +79,7 @@ class ProjectCard extends Component {
 				</div>
 				<div className="card-details">
 					<div className="details-display">
-						<div className="details-body">{this.project[this.state.tab]}</div>
+						<div className="details-body" onClick={this.toggleLinks}>{this.project[this.state.tab]}</div>
 					</div>
 					<div className="card-tabs">
 						<p className="summary-tab" onClick={() => this.selectTab('summary')} ref={this.tabs.summary}>
