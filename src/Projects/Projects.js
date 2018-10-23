@@ -8,8 +8,8 @@ import PortfolioImage from '../media/images/portfolio.png';
 
 const closetRouletteData = {
 	title: 'Closet Roulette',
-  image: ClosetRouletteImage,
-  video: "https://www.youtube.com/embed/w1o4QhaKtUg",
+	image: ClosetRouletteImage,
+	video: 'https://www.youtube.com/embed/w1o4QhaKtUg',
 	summary: (
 		<React.Fragment>
 			<p>
