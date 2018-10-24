@@ -1,23 +1,23 @@
 :root {
-  --true-black: #000;
-  --mat-black: #383838;
-  --dark-grey: #6E6E6E;
-  --light-grey: #A19F9F;
-  --light-tan: #DCB;
-  --letter-white: #EEE;
-  --line-white: #FFF;
+	--true-black: #000;
+	--mat-black: #383838;
+	--dark-grey: #6e6e6e;
+	--light-grey: #a19f9f;
+	--light-tan: #dcb;
+	--letter-white: #eee;
+	--line-white: #fff;
 }
 
 body {
-  background-color: var(--mat-black);
-  font-size: 62.5%;
-  margin: 0;
-  padding: 0;
+	background-color: var(--mat-black);
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
 }
 
 * {
-  box-sizing: border-box;
-  color: var(--letter-white);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
+	box-sizing: border-box;
+	color: var(--letter-white);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
 }
