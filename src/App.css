@@ -1,41 +1,41 @@
 .App {
-  height: 100vh;
-  width: 100vw;
+	height: 100vh;
+	width: 100vw;
 }
 
 .page-body {
-  font-size: 1.5rem;
-  margin: 80px 10%;
-  padding: 0 5%;
-  position: absolute;
-  width: 80%;
-  min-width: 350px;
-  z-index: -20;
+	font-size: 1.5rem;
+	margin: 80px 10%;
+	padding: 0 5%;
+	position: absolute;
+	width: 80%;
+	min-width: 350px;
+	z-index: -20;
 }
 
 .page-overlay {
-  background: var(--mat-black);
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: -15;
-  transition: 0.7s;
+	background: var(--mat-black);
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: -15;
+	transition: 0.7s;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 @media (max-width: 800px) {
-  .page-body {
-    font-size: 1rem;
-  }
+	.page-body {
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 650px) {
-  .page-body {
-    margin: 80px 0;
-    top: 0;
-    width: 100%;
-  }
+	.page-body {
+		margin: 80px 0;
+		top: 0;
+		width: 100%;
+	}
 }
