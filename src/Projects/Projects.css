@@ -9,8 +9,9 @@
 }
 
 .card-title {
-	background: var(--mat-black);
-	padding: 5px 20px;
+  background: var(--mat-black);
+  font-size: 25px;
+  padding: 5px 20px;
 	width: 100%;
 }
 
@@ -46,8 +47,8 @@
 
 .card-link-container .card-link {
 	margin: 5px 10px 0;
-	height: 25px;
-	width: 25px;
+	height: 35px;
+	width: 35px;
 }
 
 .card-details {
@@ -133,13 +134,12 @@
 	}
 
 	.card-link-container {
-		height: 28px;
-		width: 75px;
+		height: 41px;
 	}
 
 	.card-link-container .card-link {
-		height: 20px;
-		width: 20px;
+		height: 30px;
+		width: 30px;
 	}
 }
 
