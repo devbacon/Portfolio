@@ -1,3 +1,6 @@
+### Project Description
+This portfolio project was inspired by the concept of it's landing page which doubles as a navigation component. The idea was to have a page divided into four quadrants that act as page links. These quadrants are rendered in abstract angles using geometric algorithms in order to anchor their edges to specific points on the window object. On click, these areas will appear to expand using custom animations that change depending on the given area.
+
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
