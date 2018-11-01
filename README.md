@@ -1,5 +1,17 @@
 ### Project Description
+__Hosted live at__ https://devbacon.com
+
 This portfolio project was inspired by the concept of it's landing page which doubles as a navigation component. The idea was to have a page divided into four quadrants that act as page links. These quadrants are rendered in abstract angles using geometric algorithms in order to anchor their edges to specific points on the window object. On click, these areas will appear to expand using custom animations that change depending on the given area.
+
+### Technologies Used
+This project was designed to hone my custom animation skills and ability to create an abstract yet dynamic front end using algorithms. To ensure that these goals were accomplished, I primarily used HTML, CSS, and Javascript. React and React Router were used for their ability to get an app up and running quickly.
+
+1. __HTML__ : Component layout
+1. __CSS__ : Component styling
+1. __Javascript__ : Base language used across entire app 
+1. __React__ : Library used for component creation
+1. __React Router__ : React routing library
+1. __Firebase__ : Deployment platform
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
