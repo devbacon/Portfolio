@@ -13,6 +13,9 @@ This project was designed to hone my custom animation skills and ability to crea
 1. __React Router__ : React routing library
 1. __Firebase__ : Deployment platform
 
+### Moving Forward
+I very muc enjoyed writing up the logic behind this website. However, it has come to my attention that portfolios are typically one page view that quickly privide reference. I plan on refactoring this site using https://html5up.net/. They provide elegntly simple sites that will do a better job of representing my portfolio. I would highly recommend using this site if you plan of creating a portfolio.
+
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
